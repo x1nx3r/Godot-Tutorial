@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cvdpjj1m5fmpa"]
+
+[node name="correctAnswer" type="Node2D"]

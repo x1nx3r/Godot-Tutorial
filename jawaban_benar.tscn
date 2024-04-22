@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://heydh6l5lx6k"]
+
+[ext_resource type="Script" path="res://jawaban_benar.gd" id="1_luk8h"]
+[ext_resource type="Texture2D" uid="uid://cj61trqi8khw1" path="res://sprites/greeter_page/jawaban_benar.png" id="2_m28vh"]
+[ext_resource type="Texture2D" uid="uid://i6elts8yx3ju" path="res://sprites/buttonArrowKekanan.png" id="3_ye445"]
+[ext_resource type="Texture2D" uid="uid://b5pxyvrc7yxhb" path="res://sprites/buttonHome.png" id="4_do5x0"]
+
+[node name="jawabanBenar" type="Node2D"]
+script = ExtResource("1_luk8h")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_m28vh")
+
+[node name="nextButton" type="Button" parent="."]
+offset_left = 589.0
+offset_top = 427.0
+offset_right = 680.0
+offset_bottom = 525.0
+icon = ExtResource("3_ye445")
+flat = true
+
+[node name="homeButton" type="Button" parent="."]
+offset_left = 1129.0
+offset_top = 577.0
+offset_right = 1220.0
+offset_bottom = 675.0
+icon = ExtResource("4_do5x0")
+flat = true
+
+[connection signal="pressed" from="nextButton" to="." method="_on_nextButton_pressed"]
+[connection signal="pressed" from="homeButton" to="." method="_on_homeButton_pressed"]
