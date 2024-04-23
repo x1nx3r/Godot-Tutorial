@@ -18,21 +18,18 @@ texture = ExtResource("2_bo37a")
 position = Vector2(632, 334)
 texture = ExtResource("4_lrtuj")
 
-[node name="level1Button" type="Button" parent="."]
-offset_left = 360.0
-offset_top = 213.0
-offset_right = 478.0
-offset_bottom = 332.0
-icon = ExtResource("5_rfwtb")
-flat = true
+[node name="buttonHome" type="TextureButton" parent="."]
+offset_left = 1128.0
+offset_top = 580.0
+offset_right = 1211.0
+offset_bottom = 670.0
+texture_normal = ExtResource("6_8b1gf")
 
-[node name="homeButton" type="Button" parent="."]
-offset_left = 1082.0
-offset_top = 552.0
-offset_right = 1210.0
-offset_bottom = 690.0
-icon = ExtResource("6_8b1gf")
-flat = true
+[node name="level1Button" type="TextureButton" parent="."]
+offset_left = 373.0
+offset_top = 212.0
+offset_right = 483.0
+offset_bottom = 323.0
+texture_normal = ExtResource("5_rfwtb")
 
-[connection signal="pressed" from="level1Button" to="." method="_on_level1Button_pressed"]
-[connection signal="pressed" from="homeButton" to="." method="_on_homeButton_pressed"]
+[connection signal="pressed" from="buttonHome" to="." method="_on_homeButton_pressed"]

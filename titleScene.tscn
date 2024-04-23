@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://d1ab0up5ulicw"]
+[gd_scene load_steps=6 format=3 uid="uid://d1ab0up5ulicw"]
 
 [ext_resource type="Script" path="res://titleScene.gd" id="1_ty451"]
 [ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="2_cwa20"]
 [ext_resource type="Texture2D" uid="uid://bo2ssx0nwp1i6" path="res://sprites/title.png" id="4_o2i2y"]
-[ext_resource type="FontFile" uid="uid://bikwn0rllrfvc" path="res://font/Jersey10-Regular.ttf" id="5_b5rc4"]
 [ext_resource type="Texture2D" uid="uid://wrvcb3hcp7jb" path="res://sprites/welcome_page/masukButton.png" id="6_dvlqt"]
 [ext_resource type="Texture2D" uid="uid://d243vmxvtluk" path="res://sprites/welcome_page/creditButton.png" id="7_y0lsg"]
 
@@ -31,30 +30,21 @@ offset_bottom = 275.0
 scale = Vector2(0.565791, 0.56232)
 texture = ExtResource("4_o2i2y")
 
-[node name="buttonPlay" type="Button" parent="."]
+[node name="creditButton" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 466.0
-offset_top = 246.0
-offset_right = 834.0
-offset_bottom = 425.0
-theme_override_colors/font_color = Color(0.662745, 0.878431, 0.384314, 1)
-theme_override_fonts/font = ExtResource("5_b5rc4")
-theme_override_font_sizes/font_size = 72
-icon = ExtResource("6_dvlqt")
-flat = true
+offset_left = 462.0
+offset_top = 273.0
+offset_right = 822.0
+offset_bottom = 444.0
+texture_normal = ExtResource("6_dvlqt")
 
-[node name="buttonCredit" type="Button" parent="."]
+[node name="playButton2" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 466.0
-offset_top = 410.0
-offset_right = 834.0
-offset_bottom = 589.0
-theme_override_colors/font_color = Color(0.662745, 0.878431, 0.384314, 1)
-theme_override_fonts/font = ExtResource("5_b5rc4")
-theme_override_font_sizes/font_size = 72
-icon = ExtResource("7_y0lsg")
-flat = true
+offset_left = 464.0
+offset_top = 435.0
+offset_right = 824.0
+offset_bottom = 606.0
+texture_normal = ExtResource("7_y0lsg")
 
-[connection signal="pressed" from="buttonPlay" to="." method="_on_button_play_pressed"]
-[connection signal="pressed" from="buttonCredit" to="." method="_on_button_play_pressed"]
-[connection signal="pressed" from="buttonCredit" to="." method="_on_button_credits_pressed"]
+[connection signal="pressed" from="creditButton" to="." method="_on_button_credits_pressed"]
+[connection signal="pressed" from="playButton2" to="." method="_on_button_play_pressed"]
