@@ -33,3 +33,4 @@ offset_bottom = 323.0
 texture_normal = ExtResource("5_rfwtb")
 
 [connection signal="pressed" from="buttonHome" to="." method="_on_homeButton_pressed"]
+[connection signal="pressed" from="level1Button" to="." method="_on_level1Button_pressed"]

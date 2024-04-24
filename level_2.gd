@@ -1,5 +1,6 @@
 extends Node2D
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -11,8 +12,12 @@ func _process(delta):
 func _on_homeButton_pressed():
 	get_tree().change_scene_to_file("titleScene.tscn")
 
-func _on_nextButton_pressed():
-	if globals.currentStage == 2:
-		get_tree().change_scene_to_file("res://level_2.tscn")
-	else:
-		get_tree().change_scene_to_file("titleScene.tscn")
+func _on_choiceB_pressed():
+	get_tree().change_scene_to_file("res://jawaban_salah.tscn")
+
+func _on_choiceA_pressed():
+	globals.currentStage = 3
+	get_tree().change_scene_to_file("jawaban_benar.tscn")
+
+func _on_choiceC_pressed():
+	get_tree().change_scene_to_file("res://jawaban_salah.tscn")

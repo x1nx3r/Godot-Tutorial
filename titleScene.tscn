@@ -23,14 +23,14 @@ texture = ExtResource("2_cwa20")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 214.0
+offset_left = 227.0
 offset_top = 93.0
-offset_right = 1766.0
+offset_right = 1779.0
 offset_bottom = 275.0
 scale = Vector2(0.565791, 0.56232)
 texture = ExtResource("4_o2i2y")
 
-[node name="creditButton" type="TextureButton" parent="."]
+[node name="playButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 462.0
 offset_top = 273.0
@@ -38,7 +38,7 @@ offset_right = 822.0
 offset_bottom = 444.0
 texture_normal = ExtResource("6_dvlqt")
 
-[node name="playButton2" type="TextureButton" parent="."]
+[node name="creditButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 464.0
 offset_top = 435.0
@@ -46,5 +46,5 @@ offset_right = 824.0
 offset_bottom = 606.0
 texture_normal = ExtResource("7_y0lsg")
 
+[connection signal="pressed" from="playButton" to="." method="_on_button_play_pressed"]
 [connection signal="pressed" from="creditButton" to="." method="_on_button_credits_pressed"]
-[connection signal="pressed" from="playButton2" to="." method="_on_button_play_pressed"]

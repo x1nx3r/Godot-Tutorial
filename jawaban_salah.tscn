@@ -30,5 +30,4 @@ icon = ExtResource("3_qx2po")
 flat = true
 
 [connection signal="pressed" from="backButton" to="." method="_on_backButton_pressed"]
-[connection signal="pressed" from="backButton" to="." method="_on_nextButton_pressed"]
 [connection signal="pressed" from="homeButton" to="." method="_on_homeButton_pressed"]
