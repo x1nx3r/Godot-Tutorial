@@ -1,4 +1,4 @@
-extends Node2D
+extends Navigator
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -7,9 +7,3 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-
-func _on_homeButton_pressed():
-	get_tree().change_scene_to_file("titleScene.tscn")
-
-func _on_backButton_pressed():
-	get_tree().change_scene_to_file("level_1.tscn")

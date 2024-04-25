@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://dhdc6eamn08kv"]
+
+[ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="2_3e1fp"]
+[ext_resource type="Texture2D" uid="uid://b5pxyvrc7yxhb" path="res://sprites/buttonHome.png" id="3_pklx2"]
+[ext_resource type="Texture2D" uid="uid://dnx03g7dhqs8j" path="res://sprites/petunjuk/petunjuk1_2.png" id="4_8jtew"]
+[ext_resource type="Texture2D" uid="uid://i6elts8yx3ju" path="res://sprites/buttonArrowKekanan.png" id="5_u1dhy"]
+
+[sub_resource type="GDScript" id="GDScript_kdl34"]
+script/source = "extends Navigator
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	globals.currentStage = 2
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="Navigator" type="Node"]
+script = SubResource("GDScript_kdl34")
+
+[node name="bg" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_3e1fp")
+
+[node name="homeButton" type="TextureButton" parent="."]
+offset_left = 1127.0
+offset_top = 583.0
+offset_right = 1210.0
+offset_bottom = 673.0
+texture_normal = ExtResource("3_pklx2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -383.0
+offset_top = -323.0
+offset_right = 383.0
+offset_bottom = 234.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_8jtew")
+
+[node name="nextButton" type="TextureButton" parent="."]
+offset_left = 606.0
+offset_top = 584.0
+offset_right = 689.0
+offset_bottom = 674.0
+texture_normal = ExtResource("5_u1dhy")
+
+[connection signal="pressed" from="homeButton" to="." method="_on_homeButton_pressed"]
+[connection signal="pressed" from="nextButton" to="." method="_on_nextStageButton_pressed"]

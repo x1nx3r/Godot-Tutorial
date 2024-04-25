@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://nm31ljeuf1px"]
+[gd_scene load_steps=9 format=3 uid="uid://nm31ljeuf1px"]
 
 [ext_resource type="Script" path="res://level_2.gd" id="1_2imes"]
 [ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="2_o4kp6"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cd4lvvg5b42em" path="res://sprites/level1/choiceA.png" id="5_k0805"]
 [ext_resource type="Texture2D" uid="uid://bp2c3kye2hbj2" path="res://sprites/level1/choiceB.png" id="6_khmau"]
 [ext_resource type="Texture2D" uid="uid://8s3357e6q864" path="res://sprites/level1/choiceC.png" id="7_q8oq0"]
+[ext_resource type="Script" path="res://navigator.gd" id="8_q6o7n"]
 
 [node name="level_2" type="Node2D"]
 script = ExtResource("1_2imes")
@@ -50,6 +51,9 @@ offset_bottom = 582.0
 icon = ExtResource("7_q8oq0")
 flat = true
 
-[connection signal="pressed" from="choiceAbutton" to="." method="_on_choiceA_pressed"]
-[connection signal="pressed" from="choiceBbutton" to="." method="_on_choiceB_pressed"]
-[connection signal="pressed" from="choiceCbutton" to="." method="_on_choiceC_pressed"]
+[node name="Navigator" type="Node" parent="."]
+script = ExtResource("8_q6o7n")
+
+[connection signal="pressed" from="choiceAbutton" to="." method="_on_correct_answer_pressed"]
+[connection signal="pressed" from="choiceBbutton" to="." method="_on_false_answer_pressed"]
+[connection signal="pressed" from="choiceCbutton" to="." method="_on_false_answer_pressed"]

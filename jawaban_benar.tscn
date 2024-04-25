@@ -13,21 +13,19 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_m28vh")
 
-[node name="nextButton" type="Button" parent="."]
-offset_left = 589.0
-offset_top = 427.0
-offset_right = 680.0
-offset_bottom = 525.0
-icon = ExtResource("3_ye445")
-flat = true
+[node name="homeButton" type="TextureButton" parent="."]
+offset_left = 1127.0
+offset_top = 583.0
+offset_right = 1210.0
+offset_bottom = 673.0
+texture_normal = ExtResource("4_do5x0")
 
-[node name="homeButton" type="Button" parent="."]
-offset_left = 1129.0
-offset_top = 577.0
-offset_right = 1220.0
-offset_bottom = 675.0
-icon = ExtResource("4_do5x0")
-flat = true
+[node name="nextButton" type="TextureButton" parent="."]
+offset_left = 606.0
+offset_top = 425.0
+offset_right = 689.0
+offset_bottom = 515.0
+texture_normal = ExtResource("3_ye445")
 
-[connection signal="pressed" from="nextButton" to="." method="_on_nextButton_pressed"]
 [connection signal="pressed" from="homeButton" to="." method="_on_homeButton_pressed"]
+[connection signal="pressed" from="nextButton" to="." method="_on_nextStageButton_pressed"]

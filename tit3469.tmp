@@ -1,26 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://d1ab0up5ulicw"]
 
+[ext_resource type="Script" path="res://titleScene.gd" id="1_ty451"]
 [ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="2_cwa20"]
 [ext_resource type="Texture2D" uid="uid://bo2ssx0nwp1i6" path="res://sprites/title.png" id="4_o2i2y"]
 [ext_resource type="Texture2D" uid="uid://wrvcb3hcp7jb" path="res://sprites/welcome_page/masukButton.png" id="6_dvlqt"]
 [ext_resource type="Texture2D" uid="uid://d243vmxvtluk" path="res://sprites/welcome_page/creditButton.png" id="7_y0lsg"]
-
-[sub_resource type="GDScript" id="GDScript_oj2iv"]
-resource_name = "titleScene.gd"
-script/source = "extends Navigator
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	var playButton = get_node(\"playButton\")
-	playButton.pressed.connect(_play_button_pressed)
-	
-	var creditButton = get_node(\"creditButton\")
-	creditButton.pressed.connect(_credit_button_pressed)
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
-	pass
-"
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -29,15 +13,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = SubResource("GDScript_oj2iv")
+script = ExtResource("1_ty451")
 
-[node name="bg" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_cwa20")
 
-[node name="title" type="TextureRect" parent="."]
+[node name="TextureRect2" type="TextureRect" parent="."]
 layout_mode = 0
 offset_left = 227.0
 offset_top = 93.0

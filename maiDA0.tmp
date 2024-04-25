@@ -37,4 +37,4 @@ texture_normal = ExtResource("5_rfwtb")
 script = ExtResource("6_1bwwm")
 
 [connection signal="pressed" from="buttonHome" to="." method="_on_homeButton_pressed"]
-[connection signal="pressed" from="level1Button" to="." method="_on_nextStageButton_pressed"]
+[connection signal="pressed" from="level1Button" to="." method="_on_level1Button_pressed"]

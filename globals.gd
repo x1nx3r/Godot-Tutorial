@@ -1,4 +1,4 @@
 extends Node
 
-var currentStage = 1
-
+var currentStage = 0
+var tutorials = 0
