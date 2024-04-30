@@ -11,3 +11,6 @@ var level7passed = false
 var level8passed = false
 var level9passed = false
 var level10passed = false
+
+var uScore = 1
+var uName = "gagal"

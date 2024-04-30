@@ -9,17 +9,20 @@
 resource_name = "titleScene.gd"
 script/source = "extends Navigator
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var playButton = get_node(\"playButton\")
-	playButton.pressed.connect(_play_button_pressed)
-	
-	var creditButton = get_node(\"creditButton\")
-	creditButton.pressed.connect(_credit_button_pressed)
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	pass
+
+func _on_text_update(): # Update the userInput variable whenever the text in the TextEdit node changes
+	var uNameInput = get_node(\"uNameInput\")
+	var userInput : String = uNameInput.text
+	globals.uName = userInput
+	print(\"User input: \", userInput)
 "
 
 [node name="Control" type="Control"]
@@ -48,16 +51,28 @@ texture = ExtResource("4_o2i2y")
 
 [node name="playButton" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 462.0
-offset_top = 273.0
-offset_right = 822.0
-offset_bottom = 444.0
+offset_left = 465.0
+offset_top = 331.0
+offset_right = 825.0
+offset_bottom = 502.0
 texture_normal = ExtResource("6_dvlqt")
 
 [node name="creditButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 464.0
-offset_top = 435.0
+offset_top = 496.0
 offset_right = 824.0
-offset_bottom = 606.0
+offset_bottom = 667.0
 texture_normal = ExtResource("7_y0lsg")
+
+[node name="uNameInput" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 543.0
+offset_top = 281.0
+offset_right = 766.0
+offset_bottom = 320.0
+placeholder_text = "Masukkan Namamu"
+
+[connection signal="pressed" from="playButton" to="." method="_play_button_pressed"]
+[connection signal="pressed" from="creditButton" to="." method="_credit_button_pressed"]
+[connection signal="text_changed" from="uNameInput" to="." method="_on_text_update"]

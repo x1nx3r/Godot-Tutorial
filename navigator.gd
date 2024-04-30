@@ -53,6 +53,8 @@ func _on_nextStageButton_pressed():
 			get_tree().change_scene_to_file("level_9.tscn")
 		13:
 			get_tree().change_scene_to_file("level_10.tscn")
+		14:
+			get_tree().change_scene_to_file("res://savescore.tscn")
 
 func progressionCheck(thing):
 	thing.visible=false
