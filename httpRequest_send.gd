@@ -14,7 +14,7 @@ func _ready():
 	})
 
 	var header = ["Content-Type: application/json"]
-	var error = http_request.request("http://localhost/httpRequest/credentials-post-handler.php", header, HTTPClient.METHOD_POST, body)
+	var error = http_request.request("https://udinpetotudaradinginpengentahugejrot.000webhostapp.com//credentials-post-handler.php", header, HTTPClient.METHOD_POST, body)
 	if error != OK:
 		push_error("An error occurred in the HTTP request.")
 
