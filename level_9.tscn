@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=3 uid="uid://cnig80jnhny3e"]
+
+[ext_resource type="Script" path="res://navigator.gd" id="1_doqh8"]
+[ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="2_kqbgc"]
+[ext_resource type="Texture2D" uid="uid://bb2n4bgbujiy8" path="res://sprites/soal/level9.png" id="3_oiscs"]
+[ext_resource type="Texture2D" uid="uid://bh5kj2jp4i5xm" path="res://sprites/lvl9/choiceA.png" id="4_voyao"]
+[ext_resource type="Texture2D" uid="uid://cw6dmqtac6omu" path="res://sprites/lvl9/choiceA_.png" id="5_wwduy"]
+[ext_resource type="Texture2D" uid="uid://dsc64luip7dck" path="res://sprites/lvl9/choiceB.png" id="6_4b0gq"]
+[ext_resource type="Texture2D" uid="uid://cwksi456af5gq" path="res://sprites/lvl6/pilihanB_.png" id="7_4laeu"]
+[ext_resource type="Texture2D" uid="uid://hoyri21yvu3v" path="res://sprites/lvl9/choiceB_.png" id="8_s5ifw"]
+[ext_resource type="Texture2D" uid="uid://3xkeht5crmtl" path="res://sprites/lvl9/choiceC.png" id="9_i2tpi"]
+[ext_resource type="Texture2D" uid="uid://bgbevuj3lnhu4" path="res://sprites/lvl9/choiceC_.png" id="10_iqijg"]
+
+[node name="Navigator" type="Node"]
+script = ExtResource("1_doqh8")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2_kqbgc")
+
+[node name="Level2" type="Sprite2D" parent="."]
+position = Vector2(632.75, 254.25)
+scale = Vector2(0.881395, 0.860341)
+texture = ExtResource("3_oiscs")
+
+[node name="choiceAbutton" type="TextureButton" parent="."]
+offset_left = 119.0
+offset_top = 466.0
+offset_right = 421.0
+offset_bottom = 566.0
+texture_normal = ExtResource("4_voyao")
+texture_pressed = ExtResource("5_wwduy")
+texture_hover = ExtResource("5_wwduy")
+
+[node name="choiceBbutton" type="TextureButton" parent="."]
+offset_left = 488.0
+offset_top = 472.0
+offset_right = 784.0
+offset_bottom = 572.0
+texture_normal = ExtResource("6_4b0gq")
+texture_pressed = ExtResource("7_4laeu")
+texture_hover = ExtResource("8_s5ifw")
+
+[node name="choiceCbutton" type="TextureButton" parent="."]
+offset_left = 854.0
+offset_top = 472.0
+offset_right = 1065.0
+offset_bottom = 572.0
+texture_normal = ExtResource("9_i2tpi")
+texture_pressed = ExtResource("10_iqijg")
+texture_hover = ExtResource("10_iqijg")
+
+[connection signal="ready" from="." to="." method="level9passed"]
+[connection signal="pressed" from="choiceAbutton" to="." method="_on_correct_answer_pressed"]
+[connection signal="pressed" from="choiceBbutton" to="." method="_on_false_answer_pressed"]
+[connection signal="pressed" from="choiceCbutton" to="." method="_on_false_answer_pressed"]

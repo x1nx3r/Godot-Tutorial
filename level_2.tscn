@@ -1,13 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://nm31ljeuf1px"]
+[gd_scene load_steps=11 format=3 uid="uid://nm31ljeuf1px"]
 
 [ext_resource type="Script" path="res://level_2.gd" id="1_2imes"]
 [ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="2_o4kp6"]
-[ext_resource type="Texture2D" uid="uid://cr4m3ahiw13pb" path="res://sprites/soal/level1.png" id="3_4use8"]
 [ext_resource type="Texture2D" uid="uid://b7pmll6kqf0e0" path="res://sprites/soal/level2.png" id="4_t8bri"]
-[ext_resource type="Texture2D" uid="uid://cd4lvvg5b42em" path="res://sprites/level1/choiceA.png" id="5_k0805"]
-[ext_resource type="Texture2D" uid="uid://bp2c3kye2hbj2" path="res://sprites/level1/choiceB.png" id="6_khmau"]
-[ext_resource type="Texture2D" uid="uid://8s3357e6q864" path="res://sprites/level1/choiceC.png" id="7_q8oq0"]
+[ext_resource type="Texture2D" uid="uid://cq4rg8usow2ch" path="res://sprites/lvl2/pilihanA.png" id="6_3327j"]
+[ext_resource type="Texture2D" uid="uid://d1p1t3i8wj2jf" path="res://sprites/lvl2/pilihanA_.png" id="7_qc42n"]
 [ext_resource type="Script" path="res://navigator.gd" id="8_q6o7n"]
+[ext_resource type="Texture2D" uid="uid://dvy1y5ng8s7oo" path="res://sprites/lvl2/pilihanC.png" id="8_y44bf"]
+[ext_resource type="Texture2D" uid="uid://ff6hemsdw2p1" path="res://sprites/lvl2/pilihanC_.png" id="9_owfll"]
+[ext_resource type="Texture2D" uid="uid://bow2fu1o22ivh" path="res://sprites/lvl2/pilihanB.png" id="10_f3hhp"]
+[ext_resource type="Texture2D" uid="uid://ico6s6wsr17x" path="res://sprites/lvl2/pilihanB_.png" id="11_476k7"]
 
 [node name="level_2" type="Node2D"]
 script = ExtResource("1_2imes")
@@ -17,43 +19,42 @@ offset_right = 1280.0
 offset_bottom = 720.0
 texture = ExtResource("2_o4kp6")
 
-[node name="Level1" type="Sprite2D" parent="."]
-position = Vector2(634, 260)
-scale = Vector2(0.882558, 0.848081)
-texture = ExtResource("3_4use8")
-
 [node name="Level2" type="Sprite2D" parent="."]
 position = Vector2(632.75, 254.25)
 scale = Vector2(0.881395, 0.860341)
 texture = ExtResource("4_t8bri")
 
-[node name="choiceAbutton" type="Button" parent="."]
-offset_left = 261.0
-offset_top = 469.0
-offset_right = 480.0
-offset_bottom = 577.0
-icon = ExtResource("5_k0805")
-flat = true
-
-[node name="choiceBbutton" type="Button" parent="."]
-offset_left = 527.0
-offset_top = 470.0
-offset_right = 746.0
-offset_bottom = 578.0
-icon = ExtResource("6_khmau")
-flat = true
-
-[node name="choiceCbutton" type="Button" parent="."]
-offset_left = 783.0
-offset_top = 474.0
-offset_right = 1002.0
-offset_bottom = 582.0
-icon = ExtResource("7_q8oq0")
-flat = true
-
 [node name="Navigator" type="Node" parent="."]
 script = ExtResource("8_q6o7n")
 
-[connection signal="pressed" from="choiceAbutton" to="." method="_on_correct_answer_pressed"]
+[node name="choiceAbutton" type="TextureButton" parent="."]
+offset_left = 208.0
+offset_top = 472.0
+offset_right = 419.0
+offset_bottom = 572.0
+texture_normal = ExtResource("6_3327j")
+texture_pressed = ExtResource("7_qc42n")
+texture_hover = ExtResource("7_qc42n")
+
+[node name="choiceBbutton" type="TextureButton" parent="."]
+offset_left = 854.0
+offset_top = 472.0
+offset_right = 1065.0
+offset_bottom = 572.0
+texture_normal = ExtResource("8_y44bf")
+texture_pressed = ExtResource("9_owfll")
+texture_hover = ExtResource("9_owfll")
+
+[node name="choiceCbutton" type="TextureButton" parent="."]
+offset_left = 522.0
+offset_top = 472.0
+offset_right = 733.0
+offset_bottom = 572.0
+texture_normal = ExtResource("10_f3hhp")
+texture_pressed = ExtResource("11_476k7")
+texture_hover = ExtResource("11_476k7")
+
+[connection signal="ready" from="." to="." method="level2passed"]
+[connection signal="pressed" from="choiceAbutton" to="." method="_on_false_answer_pressed"]
 [connection signal="pressed" from="choiceBbutton" to="." method="_on_false_answer_pressed"]
-[connection signal="pressed" from="choiceCbutton" to="." method="_on_false_answer_pressed"]
+[connection signal="pressed" from="choiceCbutton" to="." method="_on_correct_answer_pressed"]

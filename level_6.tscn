@@ -1,0 +1,56 @@
+[gd_scene load_steps=10 format=3 uid="uid://dnc1drs1f5il2"]
+
+[ext_resource type="Script" path="res://navigator.gd" id="1_28ird"]
+[ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="2_10o72"]
+[ext_resource type="Texture2D" uid="uid://cqd6qsttpvg64" path="res://sprites/soal/level6.png" id="3_47dyp"]
+[ext_resource type="Texture2D" uid="uid://fsxkhhxu4kfr" path="res://sprites/lvl6/pilihanA.png" id="4_k5il0"]
+[ext_resource type="Texture2D" uid="uid://bt84ja0fs3vpg" path="res://sprites/lvl6/pilihanA_.png" id="5_m2d33"]
+[ext_resource type="Texture2D" uid="uid://qwdw0v3xr3j2" path="res://sprites/lvl6/pilihanB.png" id="6_fh4o7"]
+[ext_resource type="Texture2D" uid="uid://cwksi456af5gq" path="res://sprites/lvl6/pilihanB_.png" id="7_n7fqj"]
+[ext_resource type="Texture2D" uid="uid://c6x8rkiip6evx" path="res://sprites/lvl6/pilihanC.png" id="8_qsxbe"]
+[ext_resource type="Texture2D" uid="uid://cbel5a2lm2n2x" path="res://sprites/lvl6/pilihanC_.png" id="9_3ij7j"]
+
+[node name="Navigator" type="Node"]
+script = ExtResource("1_28ird")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2_10o72")
+
+[node name="Level2" type="Sprite2D" parent="."]
+position = Vector2(632.75, 254.25)
+scale = Vector2(0.881395, 0.860341)
+texture = ExtResource("3_47dyp")
+
+[node name="choiceAbutton" type="TextureButton" parent="."]
+offset_left = 208.0
+offset_top = 472.0
+offset_right = 419.0
+offset_bottom = 572.0
+texture_normal = ExtResource("4_k5il0")
+texture_pressed = ExtResource("5_m2d33")
+texture_hover = ExtResource("5_m2d33")
+
+[node name="choiceBbutton" type="TextureButton" parent="."]
+offset_left = 522.0
+offset_top = 472.0
+offset_right = 733.0
+offset_bottom = 572.0
+texture_normal = ExtResource("6_fh4o7")
+texture_pressed = ExtResource("7_n7fqj")
+texture_hover = ExtResource("7_n7fqj")
+
+[node name="choiceCbutton" type="TextureButton" parent="."]
+offset_left = 854.0
+offset_top = 472.0
+offset_right = 1065.0
+offset_bottom = 572.0
+texture_normal = ExtResource("8_qsxbe")
+texture_pressed = ExtResource("9_3ij7j")
+texture_hover = ExtResource("9_3ij7j")
+
+[connection signal="ready" from="." to="." method="level6passed"]
+[connection signal="pressed" from="choiceAbutton" to="." method="_on_false_answer_pressed"]
+[connection signal="pressed" from="choiceBbutton" to="." method="_on_correct_answer_pressed"]
+[connection signal="pressed" from="choiceCbutton" to="." method="_on_false_answer_pressed"]
