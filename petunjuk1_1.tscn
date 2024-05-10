@@ -1,31 +1,31 @@
-[gd_scene load_steps=7 format=3 uid="uid://c6apyfwl8187k"]
+[gd_scene load_steps=6 format=3 uid="uid://c6apyfwl8187k"]
 
 [ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="1_thdsv"]
-[ext_resource type="Script" path="res://navigator.gd" id="2_5ybm4"]
 [ext_resource type="Texture2D" uid="uid://b5pxyvrc7yxhb" path="res://sprites/buttonHome.png" id="2_l0dl8"]
 [ext_resource type="Texture2D" uid="uid://imdcbm1ntyai" path="res://sprites/petunjuk/petunjuk1_1.png" id="3_rxwv4"]
 [ext_resource type="Texture2D" uid="uid://i6elts8yx3ju" path="res://sprites/buttonArrowKekanan.png" id="4_auvht"]
 
 [sub_resource type="GDScript" id="GDScript_q4hqd"]
-script/source = "extends Navigator
+script/source = "extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$homeButton.pressed.connect(SceneController.levelMenu_button_pressed)
+	$nextButton.pressed.connect(SceneController.nextStageButton_pressed)
 	globals.currentStage = 1
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
+
 "
 
-[node name="Navigator" type="Node"]
+[node name="active_scene" type="Node"]
 script = SubResource("GDScript_q4hqd")
 
 [node name="bg" type="TextureRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_thdsv")
-
-[node name="Navigator" type="Node" parent="bg"]
-script = ExtResource("2_5ybm4")
 
 [node name="homeButton" type="TextureButton" parent="."]
 offset_left = 1127.0
@@ -54,6 +54,3 @@ offset_top = 584.0
 offset_right = 689.0
 offset_bottom = 674.0
 texture_normal = ExtResource("4_auvht")
-
-[connection signal="pressed" from="homeButton" to="." method="_on_homeButton_pressed"]
-[connection signal="pressed" from="nextButton" to="." method="_on_nextStageButton_pressed"]

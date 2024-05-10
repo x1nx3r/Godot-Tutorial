@@ -1,7 +1,19 @@
-extends Navigator
+extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	globals.currentStage=0
+	$buttonHome.pressed.connect(SceneController.homeButton_pressed)
+	$level2Button.pressed.connect(SceneController.level2_button_pressed)
+	$level1Button.pressed.connect(SceneController.nextStageButton_pressed)
+	$level3Button.pressed.connect(SceneController.level3_button_pressed)
+	$level4Button.pressed.connect(SceneController.level4_button_pressed)
+	$level5Button.pressed.connect(SceneController.level5_button_pressed)
+	$level6Button.pressed.connect(SceneController.level6_button_pressed)
+	$level7Button.pressed.connect(SceneController.level7_button_pressed)
+	$level8Button.pressed.connect(SceneController.level8_button_pressed)
+	$level9Button.pressed.connect(SceneController.level9_button_pressed)
+	$level10Button.pressed.connect(SceneController.level10_button_pressed)
 	var key2 = get_node("Key2")
 	var key3 = get_node("Key3")
 	var key4 = get_node("Key4")
@@ -11,7 +23,7 @@ func _ready():
 	var key8 = get_node("Key8")
 	var key9 = get_node("Key9")
 	var key10 = get_node("Key10")
-	
+
 	# Iterate over the keys from 2 to 10
 	for i in range(2, 11):
 		# Construct the node name dynamically
@@ -27,6 +39,5 @@ func _ready():
 		# If true, set the node's visibility to false
 			key.visible = false
 
-	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
+
+

@@ -1,13 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://bi5grljmbdu3a"]
+[gd_scene load_steps=6 format=3 uid="uid://bi5grljmbdu3a"]
 
-[ext_resource type="Script" path="res://navigator.gd" id="1_bl2j1"]
 [ext_resource type="Script" path="res://petunjuk3.gd" id="1_tjly7"]
 [ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="2_56me5"]
 [ext_resource type="Texture2D" uid="uid://b5pxyvrc7yxhb" path="res://sprites/buttonHome.png" id="3_tst8h"]
 [ext_resource type="Texture2D" uid="uid://bkdhdwi5ihict" path="res://sprites/petunjuk/petunjuk3.png" id="4_iudys"]
 [ext_resource type="Texture2D" uid="uid://i6elts8yx3ju" path="res://sprites/buttonArrowKekanan.png" id="5_2wc08"]
 
-[node name="Navigator" type="Node"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_tjly7")
 
 [node name="bg" type="TextureRect" parent="."]
@@ -42,9 +41,3 @@ offset_top = 584.0
 offset_right = 689.0
 offset_bottom = 674.0
 texture_normal = ExtResource("5_2wc08")
-
-[node name="Navigator" type="Node" parent="."]
-script = ExtResource("1_bl2j1")
-
-[connection signal="pressed" from="homeButton" to="Navigator" method="_on_homeButton_pressed"]
-[connection signal="pressed" from="nextButton" to="Navigator" method="_on_nextStageButton_pressed"]

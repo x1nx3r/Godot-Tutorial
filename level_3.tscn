@@ -1,6 +1,5 @@
-[gd_scene load_steps=11 format=3 uid="uid://dmc6axm1nwis3"]
+[gd_scene load_steps=10 format=3 uid="uid://dmc6axm1nwis3"]
 
-[ext_resource type="Script" path="res://navigator.gd" id="1_gso2m"]
 [ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="2_3wyvu"]
 [ext_resource type="Texture2D" uid="uid://df4atjpttdprl" path="res://sprites/soal/level3.png" id="3_q26be"]
 [ext_resource type="Texture2D" uid="uid://cpfh3yiopy0g5" path="res://sprites/lvl3/pilihanA.png" id="4_ea2p6"]
@@ -17,7 +16,11 @@ script/source = "extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	SceneController.level3passed()
+	globals.currentStage = 4
+	$choiceAbutton.pressed.connect(SceneController.false_answer_pressed)
+	$choiceBbutton.pressed.connect(SceneController.false_answer_pressed)
+	$choiceCbutton.pressed.connect(SceneController.correct_answer_pressed)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,7 +28,7 @@ func _process(delta):
 	pass
 "
 
-[node name="Navigator" type="Node"]
+[node name="active_scene" type="Node"]
 script = SubResource("GDScript_561fd")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -64,11 +67,3 @@ offset_bottom = 572.0
 texture_normal = ExtResource("8_3h1ya")
 texture_pressed = ExtResource("9_pdmmv")
 texture_hover = ExtResource("9_pdmmv")
-
-[node name="Navigator" type="Node" parent="."]
-script = ExtResource("1_gso2m")
-
-[connection signal="ready" from="." to="Navigator" method="level3passed"]
-[connection signal="pressed" from="choiceAbutton" to="Navigator" method="_on_false_answer_pressed"]
-[connection signal="pressed" from="choiceBbutton" to="Navigator" method="_on_false_answer_pressed"]
-[connection signal="pressed" from="choiceCbutton" to="Navigator" method="_on_correct_answer_pressed"]

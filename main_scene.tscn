@@ -1,11 +1,10 @@
-[gd_scene load_steps=17 format=3 uid="uid://b5j1jaey7k27i"]
+[gd_scene load_steps=16 format=3 uid="uid://b5j1jaey7k27i"]
 
 [ext_resource type="Script" path="res://main_scene.gd" id="1_yryv1"]
 [ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="2_bo37a"]
 [ext_resource type="Texture2D" uid="uid://d04ixsdw518ho" path="res://sprites/levelSelect/dialog.png" id="4_lrtuj"]
+[ext_resource type="Texture2D" uid="uid://bwvgsflusyk7x" path="res://sprites/levelSelect/exit.png" id="4_rahy0"]
 [ext_resource type="Texture2D" uid="uid://gcmfa1yyw5hb" path="res://sprites/levelSelect/level1.png" id="5_rfwtb"]
-[ext_resource type="Script" path="res://navigator.gd" id="6_1bwwm"]
-[ext_resource type="Texture2D" uid="uid://b5pxyvrc7yxhb" path="res://sprites/buttonHome.png" id="6_8b1gf"]
 [ext_resource type="Texture2D" uid="uid://cgfx1oyhoe5t0" path="res://sprites/levelSelect/2.png" id="7_6tax5"]
 [ext_resource type="Texture2D" uid="uid://cr18bur82a0eh" path="res://sprites/levelSelect/3.png" id="8_a40wu"]
 [ext_resource type="Texture2D" uid="uid://dkwvkfxmb7t2q" path="res://sprites/levelSelect/4.png" id="9_6q624"]
@@ -17,7 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://dwkjklr3vl6hg" path="res://sprites/levelSelect/10.png" id="15_a3mce"]
 [ext_resource type="Texture2D" uid="uid://c0xxfnns6crqb" path="res://sprites/levelSelect/key.png" id="16_jdq3i"]
 
-[node name="MainScene" type="Node2D"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_yryv1")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -35,53 +34,77 @@ offset_left = 1128.0
 offset_top = 580.0
 offset_right = 1211.0
 offset_bottom = 670.0
-texture_normal = ExtResource("6_8b1gf")
+texture_normal = ExtResource("4_rahy0")
 
 [node name="level1Button" type="TextureButton" parent="."]
-offset_left = 408.0
-offset_top = 210.0
-offset_right = 518.0
-offset_bottom = 321.0
+offset_left = 418.0
+offset_top = 208.0
+offset_right = 528.0
+offset_bottom = 319.0
 texture_normal = ExtResource("5_rfwtb")
 
-[node name="Navigator" type="Node" parent="."]
-script = ExtResource("6_1bwwm")
+[node name="level2Button" type="TextureButton" parent="."]
+offset_left = 527.0
+offset_top = 212.0
+offset_right = 637.0
+offset_bottom = 323.0
+texture_normal = ExtResource("7_6tax5")
 
-[node name="2" type="Sprite2D" parent="."]
-position = Vector2(580, 267)
-texture = ExtResource("7_6tax5")
+[node name="level3Button" type="TextureButton" parent="."]
+offset_left = 644.0
+offset_top = 210.0
+offset_right = 754.0
+offset_bottom = 321.0
+texture_normal = ExtResource("8_a40wu")
 
-[node name="3" type="Sprite2D" parent="."]
-position = Vector2(700, 266)
-texture = ExtResource("8_a40wu")
+[node name="level4Button" type="TextureButton" parent="."]
+offset_left = 760.0
+offset_top = 208.0
+offset_right = 870.0
+offset_bottom = 319.0
+texture_normal = ExtResource("9_6q624")
 
-[node name="4" type="Sprite2D" parent="."]
-position = Vector2(812, 263)
-texture = ExtResource("9_6q624")
+[node name="level5Button" type="TextureButton" parent="."]
+offset_left = 407.0
+offset_top = 323.0
+offset_right = 517.0
+offset_bottom = 434.0
+texture_normal = ExtResource("10_4la4o")
 
-[node name="5" type="Sprite2D" parent="."]
-position = Vector2(461, 384)
-texture = ExtResource("10_4la4o")
+[node name="level6Button" type="TextureButton" parent="."]
+offset_left = 524.0
+offset_top = 322.0
+offset_right = 634.0
+offset_bottom = 433.0
+texture_normal = ExtResource("11_24mlr")
 
-[node name="6" type="Sprite2D" parent="."]
-position = Vector2(576, 382)
-texture = ExtResource("11_24mlr")
+[node name="level7Button" type="TextureButton" parent="."]
+offset_left = 643.0
+offset_top = 318.0
+offset_right = 753.0
+offset_bottom = 429.0
+texture_normal = ExtResource("12_kty4j")
 
-[node name="7" type="Sprite2D" parent="."]
-position = Vector2(696, 380)
-texture = ExtResource("12_kty4j")
+[node name="level8Button" type="TextureButton" parent="."]
+offset_left = 753.0
+offset_top = 321.0
+offset_right = 863.0
+offset_bottom = 432.0
+texture_normal = ExtResource("13_kw8bk")
 
-[node name="8" type="Sprite2D" parent="."]
-position = Vector2(809, 383)
-texture = ExtResource("13_kw8bk")
+[node name="level9Button" type="TextureButton" parent="."]
+offset_left = 524.0
+offset_top = 436.0
+offset_right = 634.0
+offset_bottom = 547.0
+texture_normal = ExtResource("14_fwujh")
 
-[node name="9" type="Sprite2D" parent="."]
-position = Vector2(577, 500)
-texture = ExtResource("14_fwujh")
-
-[node name="10" type="Sprite2D" parent="."]
-position = Vector2(696, 501)
-texture = ExtResource("15_a3mce")
+[node name="level10Button" type="TextureButton" parent="."]
+offset_left = 641.0
+offset_top = 437.0
+offset_right = 751.0
+offset_bottom = 548.0
+texture_normal = ExtResource("15_a3mce")
 
 [node name="Key2" type="Sprite2D" parent="."]
 position = Vector2(612, 293)
@@ -118,6 +141,3 @@ texture = ExtResource("16_jdq3i")
 [node name="Key10" type="Sprite2D" parent="."]
 position = Vector2(730, 530)
 texture = ExtResource("16_jdq3i")
-
-[connection signal="pressed" from="buttonHome" to="." method="_on_homeButton_pressed"]
-[connection signal="pressed" from="level1Button" to="." method="_on_nextStageButton_pressed"]

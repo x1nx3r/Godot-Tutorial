@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Godot-tutorial"
-run/main_scene="res://titleScene.tscn"
+run/main_scene="res://active_scene.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.png"
 
 [autoload]
 
 globals="*res://globals.gd"
+SceneController="*res://scene_controller.gd"
 audio_bg="*res://audio_bg.gd"
 
 [display]
@@ -25,6 +26,7 @@ audio_bg="*res://audio_bg.gd"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/size/initial_position_type=3
+window/size/always_on_top=true
 window/stretch/mode="viewport"
 
 [rendering]

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dn8e04pnrt5w3" path="res://sprites/credit/credits.png" id="2_gybuu"]
 [ext_resource type="Texture2D" uid="uid://b1v2v7t6wc5kd" path="res://sprites/buttonArrowKekiri.png" id="3_3eqdj"]
 
-[node name="credit_page" type="Node2D"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_8qyob")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -12,12 +12,9 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_gybuu")
 
-[node name="backButton" type="Button" parent="."]
-offset_left = 596.0
-offset_top = 571.0
-offset_right = 687.0
-offset_bottom = 669.0
-icon = ExtResource("3_3eqdj")
-flat = true
-
-[connection signal="pressed" from="backButton" to="." method="_on_backButton_pressed"]
+[node name="backButton" type="TextureButton" parent="."]
+offset_left = 597.0
+offset_top = 577.0
+offset_right = 680.0
+offset_bottom = 667.0
+texture_normal = ExtResource("3_3eqdj")

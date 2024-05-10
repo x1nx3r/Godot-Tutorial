@@ -1,17 +1,16 @@
-[gd_scene load_steps=11 format=3 uid="uid://nm31ljeuf1px"]
+[gd_scene load_steps=10 format=3 uid="uid://nm31ljeuf1px"]
 
 [ext_resource type="Script" path="res://level_2.gd" id="1_2imes"]
 [ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="2_o4kp6"]
 [ext_resource type="Texture2D" uid="uid://b7pmll6kqf0e0" path="res://sprites/soal/level2.png" id="4_t8bri"]
 [ext_resource type="Texture2D" uid="uid://cq4rg8usow2ch" path="res://sprites/lvl2/pilihanA.png" id="6_3327j"]
 [ext_resource type="Texture2D" uid="uid://d1p1t3i8wj2jf" path="res://sprites/lvl2/pilihanA_.png" id="7_qc42n"]
-[ext_resource type="Script" path="res://navigator.gd" id="8_q6o7n"]
 [ext_resource type="Texture2D" uid="uid://dvy1y5ng8s7oo" path="res://sprites/lvl2/pilihanC.png" id="8_y44bf"]
 [ext_resource type="Texture2D" uid="uid://ff6hemsdw2p1" path="res://sprites/lvl2/pilihanC_.png" id="9_owfll"]
 [ext_resource type="Texture2D" uid="uid://bow2fu1o22ivh" path="res://sprites/lvl2/pilihanB.png" id="10_f3hhp"]
 [ext_resource type="Texture2D" uid="uid://ico6s6wsr17x" path="res://sprites/lvl2/pilihanB_.png" id="11_476k7"]
 
-[node name="level_2" type="Node2D"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_2imes")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -24,9 +23,6 @@ position = Vector2(632.75, 254.25)
 scale = Vector2(0.881395, 0.860341)
 texture = ExtResource("4_t8bri")
 
-[node name="Navigator" type="Node" parent="."]
-script = ExtResource("8_q6o7n")
-
 [node name="choiceAbutton" type="TextureButton" parent="."]
 offset_left = 208.0
 offset_top = 472.0
@@ -37,15 +33,6 @@ texture_pressed = ExtResource("7_qc42n")
 texture_hover = ExtResource("7_qc42n")
 
 [node name="choiceBbutton" type="TextureButton" parent="."]
-offset_left = 854.0
-offset_top = 472.0
-offset_right = 1065.0
-offset_bottom = 572.0
-texture_normal = ExtResource("8_y44bf")
-texture_pressed = ExtResource("9_owfll")
-texture_hover = ExtResource("9_owfll")
-
-[node name="choiceCbutton" type="TextureButton" parent="."]
 offset_left = 522.0
 offset_top = 472.0
 offset_right = 733.0
@@ -54,7 +41,11 @@ texture_normal = ExtResource("10_f3hhp")
 texture_pressed = ExtResource("11_476k7")
 texture_hover = ExtResource("11_476k7")
 
-[connection signal="ready" from="." to="." method="level2passed"]
-[connection signal="pressed" from="choiceAbutton" to="." method="_on_false_answer_pressed"]
-[connection signal="pressed" from="choiceBbutton" to="." method="_on_false_answer_pressed"]
-[connection signal="pressed" from="choiceCbutton" to="." method="_on_correct_answer_pressed"]
+[node name="choiceCbutton" type="TextureButton" parent="."]
+offset_left = 854.0
+offset_top = 472.0
+offset_right = 1065.0
+offset_bottom = 572.0
+texture_normal = ExtResource("8_y44bf")
+texture_pressed = ExtResource("9_owfll")
+texture_hover = ExtResource("9_owfll")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://ckrmapvh7yfim"]
 
-[ext_resource type="Script" path="res://navigator.gd" id="1_nlh3j"]
+[ext_resource type="Script" path="res://level_5.gd" id="1_d1auu"]
 [ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="2_txyb6"]
 [ext_resource type="Texture2D" uid="uid://bheumb4ikoeax" path="res://sprites/soal/level5.png" id="3_xhig1"]
 [ext_resource type="Texture2D" uid="uid://dpode6kqqxol" path="res://sprites/lvl5/pilihanA.png" id="4_5s7jj"]
@@ -10,8 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://du7l357bv7tsj" path="res://sprites/lvl5/pilihanC.png" id="8_7uju5"]
 [ext_resource type="Texture2D" uid="uid://c8hhlps4ievay" path="res://sprites/lvl5/pilihanC_.png" id="9_6di0g"]
 
-[node name="Navigator" type="Node"]
-script = ExtResource("1_nlh3j")
+[node name="active_scene" type="Node"]
+script = ExtResource("1_d1auu")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1280.0
@@ -51,6 +51,3 @@ texture_pressed = ExtResource("9_6di0g")
 texture_hover = ExtResource("9_6di0g")
 
 [connection signal="ready" from="." to="." method="level5passed"]
-[connection signal="pressed" from="choiceAbutton" to="." method="_on_false_answer_pressed"]
-[connection signal="pressed" from="choiceBbutton" to="." method="_on_false_answer_pressed"]
-[connection signal="pressed" from="choiceCbutton" to="." method="_on_correct_answer_pressed"]

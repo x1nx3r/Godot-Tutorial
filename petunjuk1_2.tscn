@@ -6,17 +6,20 @@
 [ext_resource type="Texture2D" uid="uid://i6elts8yx3ju" path="res://sprites/buttonArrowKekanan.png" id="5_u1dhy"]
 
 [sub_resource type="GDScript" id="GDScript_kdl34"]
-script/source = "extends Navigator
+script/source = "extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$homeButton.pressed.connect(SceneController.levelMenu_button_pressed)
+	$nextButton.pressed.connect(SceneController.nextStageButton_pressed)
 	globals.currentStage = 2
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
 "
 
-[node name="Navigator" type="Node"]
+[node name="active_scene" type="Node"]
 script = SubResource("GDScript_kdl34")
 
 [node name="bg" type="TextureRect" parent="."]
@@ -51,6 +54,3 @@ offset_top = 584.0
 offset_right = 689.0
 offset_bottom = 674.0
 texture_normal = ExtResource("5_u1dhy")
-
-[connection signal="pressed" from="homeButton" to="." method="_on_homeButton_pressed"]
-[connection signal="pressed" from="nextButton" to="." method="_on_nextStageButton_pressed"]
