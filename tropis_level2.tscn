@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://b4uot8vt0udrg"]
+[gd_scene load_steps=10 format=3 uid="uid://b4uot8vt0udrg"]
 
+[ext_resource type="Script" path="res://tropis_level2.gd" id="1_4qu3q"]
 [ext_resource type="Texture2D" uid="uid://qype1e0ikgv4" path="res://sprites/Narasi tropis 1/view-spectacular-nature-landscape 1.png" id="1_rbfe3"]
 [ext_resource type="Texture2D" uid="uid://bevw5kjmqa6rb" path="res://sprites/Nomor 2 tropis/Group 25.png" id="2_rkcao"]
 [ext_resource type="Texture2D" uid="uid://xtnnb1hxklex" path="res://sprites/Nomor 2 tropis/Group 9.png" id="3_pq3m2"]
@@ -10,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://hg6ttudi1x4m" path="res://sprites/Nomor 2 tropis/Group 180.png" id="8_h3jxr"]
 
 [node name="Node" type="Node"]
+script = ExtResource("1_4qu3q")
 
 [node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]
 position = Vector2(661, 306)

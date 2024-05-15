@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://ce4qly01kfe7q"]
+[gd_scene load_steps=11 format=3 uid="uid://ce4qly01kfe7q"]
 
+[ext_resource type="Script" path="res://sabana_level4.gd" id="1_ltveb"]
 [ext_resource type="Texture2D" uid="uid://lpfvsergyxtu" path="res://sprites/Narasi safana1/wanderlust-summer-landscape-painting-background 3.png" id="1_wwv2r"]
 [ext_resource type="Texture2D" uid="uid://fjiqtxgqd76s" path="res://sprites/Nomor 4 sabana/Group 16.png" id="2_bvnrq"]
 [ext_resource type="Texture2D" uid="uid://cb73dktbtsq1e" path="res://sprites/Nomor 4 sabana/Aves.png" id="3_5fprx"]
@@ -11,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dk25mmq44qaut" path="res://sprites/Nomor 4 sabana/WhatsApp Image 2024-05-15 at 19.51 2.png" id="9_71gip"]
 
 [node name="Node" type="Node"]
+script = ExtResource("1_ltveb")
 
 [node name="Wanderlust-summer-landscape-painting-background3" type="Sprite2D" parent="."]
 position = Vector2(666, 278)

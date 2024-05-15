@@ -1,16 +1,18 @@
-[gd_scene load_steps=10 format=3 uid="uid://ccmkpl8qkl2h"]
+[gd_scene load_steps=11 format=3 uid="uid://ccmkpl8qkl2h"]
 
 [ext_resource type="Texture2D" uid="uid://qype1e0ikgv4" path="res://sprites/Narasi tropis 1/view-spectacular-nature-landscape 1.png" id="1_bb2w1"]
+[ext_resource type="Script" path="res://tropis_level5.gd" id="1_wgxi7"]
 [ext_resource type="Texture2D" uid="uid://ct4mos0pay5r" path="res://sprites/Nomor 5 tropis/Group 16.png" id="2_ck30o"]
 [ext_resource type="Texture2D" uid="uid://rnyvp1gyxf33" path="res://sprites/Nomor 5 tropis/Aves.png" id="3_18egl"]
 [ext_resource type="Texture2D" uid="uid://djjn8g2nne2n3" path="res://sprites/Nomor 5 tropis/Group 187.png" id="4_6k8lj"]
-[ext_resource type="Texture2D" uid="uid://d0n47n53vitoq" path="res://sprites/Nomor 5 tropis/Group 17.png" id="5_78774"]
-[ext_resource type="Texture2D" uid="uid://cbkskgy6hohg2" path="res://sprites/Nomor 5 tropis/Group 188.png" id="6_w3wfe"]
+[ext_resource type="Texture2D" uid="uid://cypuqierkhxgo" path="res://sprites/Nomor 5 tropis/phasianidae.png" id="6_wpw17"]
 [ext_resource type="Texture2D" uid="uid://dqsr25b47vnrl" path="res://sprites/Nomor 5 tropis/Group 8.png" id="7_evrfm"]
+[ext_resource type="Texture2D" uid="uid://cvyn1d8n84dfw" path="res://sprites/Nomor 5 tropis/phasianidae!.png" id="7_o18in"]
 [ext_resource type="Texture2D" uid="uid://ckhgpd1qtghpi" path="res://sprites/Nomor 5 tropis/Group 189.png" id="8_5qpoc"]
 [ext_resource type="Texture2D" uid="uid://233ak6o0jyd1" path="res://sprites/Nomor 5 tropis/WhatsApp Image 2024-05-15 at 19.50 2.png" id="9_ugyrt"]
 
 [node name="Node" type="Node"]
+script = ExtResource("1_wgxi7")
 
 [node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]
 position = Vector2(661, 306)
@@ -33,17 +35,17 @@ texture_hover = ExtResource("4_6k8lj")
 [node name="choiceBbutton" type="TextureButton" parent="."]
 offset_left = 488.0
 offset_top = 472.0
-offset_right = 784.0
-offset_bottom = 572.0
-texture_normal = ExtResource("5_78774")
-texture_pressed = ExtResource("6_w3wfe")
-texture_hover = ExtResource("6_w3wfe")
+offset_right = 961.0
+offset_bottom = 632.0
+texture_normal = ExtResource("6_wpw17")
+texture_pressed = ExtResource("7_o18in")
+texture_hover = ExtResource("7_o18in")
 
 [node name="choiceCbutton" type="TextureButton" parent="."]
-offset_left = 854.0
+offset_left = 947.0
 offset_top = 472.0
-offset_right = 1065.0
-offset_bottom = 572.0
+offset_right = 1278.0
+offset_bottom = 632.0
 texture_normal = ExtResource("7_evrfm")
 texture_pressed = ExtResource("8_5qpoc")
 texture_hover = ExtResource("8_5qpoc")

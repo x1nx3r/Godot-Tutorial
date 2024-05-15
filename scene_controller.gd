@@ -52,9 +52,9 @@ func credit_button_pressed():
 	goto_scene("res://credit_page.tscn")
 
 func levelMenu_button_pressed():
-	goto_scene("main_scene.tscn")
+	goto_scene("stage_select.tscn")
 
-func savana_button_pressed():
+func savanna_button_pressed():
 	goto_scene("sabana_select.tscn")
 
 func tropis_button_pressed():
@@ -73,7 +73,11 @@ func correct_answer_pressed():
 	globals.currentStage += 1
 	goto_scene("jawaban_benar.tscn")
 
+func correct_last_answer_pressed():
+	goto_scene("savescore.tscn")
+
 func nextStageButton_pressed():
+	print(globals.currentStage)
 	match globals.currentStage:
 		0:
 			goto_scene("stage_select.tscn")
@@ -98,7 +102,7 @@ func nextStageButton_pressed():
 		10:
 			goto_scene("sabana_level5.tscn")
 		11:
-			goto_scene("sabana_select.tscn")
+			goto_scene("tropis_select.tscn")
 		12:
 			goto_scene("petunjuk_tropis.tscn")
 		13:
@@ -118,6 +122,8 @@ func nextStageButton_pressed():
 		20:
 			goto_scene("tropis_level5.tscn")
 		21:
+			goto_scene("savescore.tscn")
+		22:
 			goto_scene("savescore.tscn")
 
 func progressionCheck(thing):

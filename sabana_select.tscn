@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://di3kd0lkqo2n0"]
+[gd_scene load_steps=11 format=3 uid="uid://di3kd0lkqo2n0"]
 
+[ext_resource type="Script" path="res://sabana_select.gd" id="1_832cy"]
 [ext_resource type="Texture2D" uid="uid://lpfvsergyxtu" path="res://sprites/Narasi safana1/wanderlust-summer-landscape-painting-background 3.png" id="1_eue2j"]
 [ext_resource type="Texture2D" uid="uid://d04ixsdw518ho" path="res://sprites/levelSelect/dialog.png" id="2_j63pv"]
 [ext_resource type="Texture2D" uid="uid://bwvgsflusyk7x" path="res://sprites/levelSelect/exit.png" id="3_28l7g"]
@@ -11,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://c0xxfnns6crqb" path="res://sprites/levelSelect/key.png" id="14_wwwd8"]
 
 [node name="Node" type="Node"]
+script = ExtResource("1_832cy")
 
 [node name="Wanderlust-summer-landscape-painting-background3" type="Sprite2D" parent="."]
 position = Vector2(666, 278)
@@ -29,38 +31,53 @@ offset_right = 1211.0
 offset_bottom = 670.0
 texture_normal = ExtResource("3_28l7g")
 
-[node name="Group9" type="Sprite2D" parent="."]
-position = Vector2(491, 284)
-texture = ExtResource("4_prnpf")
+[node name="level1Button" type="TextureButton" parent="."]
+offset_left = 406.0
+offset_top = 220.0
+offset_right = 557.0
+offset_bottom = 372.0
+texture_normal = ExtResource("4_prnpf")
 
-[node name="Group171" type="Sprite2D" parent="."]
-position = Vector2(639, 288)
-texture = ExtResource("5_nlc7n")
+[node name="level2Button" type="TextureButton" parent="."]
+offset_left = 563.0
+offset_top = 227.0
+offset_right = 714.0
+offset_bottom = 374.0
+texture_normal = ExtResource("5_nlc7n")
 
-[node name="Group172" type="Sprite2D" parent="."]
-position = Vector2(794, 292)
-texture = ExtResource("6_min08")
+[node name="level3Button" type="TextureButton" parent="."]
+offset_left = 731.0
+offset_top = 232.0
+offset_right = 882.0
+offset_bottom = 379.0
+texture_normal = ExtResource("6_min08")
 
-[node name="Group173" type="Sprite2D" parent="."]
-position = Vector2(563, 429)
-texture = ExtResource("7_7xewo")
+[node name="level4Button" type="TextureButton" parent="."]
+offset_left = 479.0
+offset_top = 370.0
+offset_right = 630.0
+offset_bottom = 517.0
+texture_normal = ExtResource("7_7xewo")
 
-[node name="Group174" type="Sprite2D" parent="."]
-position = Vector2(721, 438)
-texture = ExtResource("8_s7e7e")
+[node name="level5Button" type="TextureButton" parent="."]
+offset_left = 652.0
+offset_top = 378.0
+offset_right = 803.0
+offset_bottom = 525.0
+texture_normal = ExtResource("8_s7e7e")
 
 [node name="Key2" type="Sprite2D" parent="."]
-position = Vector2(679, 319)
+position = Vector2(689, 323)
 texture = ExtResource("14_wwwd8")
 
 [node name="Key3" type="Sprite2D" parent="."]
-position = Vector2(835, 321)
+position = Vector2(846, 327)
 texture = ExtResource("14_wwwd8")
 
 [node name="Key4" type="Sprite2D" parent="."]
-position = Vector2(599, 462)
+position = Vector2(594, 478)
 texture = ExtResource("14_wwwd8")
 
 [node name="Key5" type="Sprite2D" parent="."]
-position = Vector2(762, 468)
+position = Vector2(765, 476)
 texture = ExtResource("14_wwwd8")

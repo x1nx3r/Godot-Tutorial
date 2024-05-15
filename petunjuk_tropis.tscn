@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://ddopyvdb3yu4h"]
+[gd_scene load_steps=6 format=3 uid="uid://ddopyvdb3yu4h"]
 
+[ext_resource type="Script" path="res://petunjuk_tropis.gd" id="1_06sed"]
 [ext_resource type="Texture2D" uid="uid://qype1e0ikgv4" path="res://sprites/Narasi tropis 1/view-spectacular-nature-landscape 1.png" id="1_jxv4p"]
 [ext_resource type="Texture2D" uid="uid://d3uyw7jgvn3js" path="res://sprites/Narasi safana1/09136564291372d97831a95b1c3eccbc-removebg-preview 1.png" id="2_xfylr"]
-[ext_resource type="Texture2D" uid="uid://b0b6om5jy8i6d" path="res://sprites/Narasi tropis 1/Mask group.png" id="3_q1r5p"]
 [ext_resource type="Texture2D" uid="uid://i6elts8yx3ju" path="res://sprites/buttonArrowKekanan.png" id="4_gi1qo"]
+[ext_resource type="Texture2D" uid="uid://6nrud5636xg4" path="res://sprites/tropis1.png" id="4_ofwsn"]
 
 [node name="Node" type="Node"]
+script = ExtResource("1_06sed")
 
 [node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]
 position = Vector2(661, 306)
@@ -18,7 +20,7 @@ texture = ExtResource("2_xfylr")
 [node name="MaskGroup" type="Sprite2D" parent="."]
 position = Vector2(637.125, 568.25)
 scale = Vector2(0.851686, 0.86399)
-texture = ExtResource("3_q1r5p")
+texture = ExtResource("4_ofwsn")
 
 [node name="nextButton" type="TextureButton" parent="."]
 offset_left = 1174.0

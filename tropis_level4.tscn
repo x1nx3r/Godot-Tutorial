@@ -1,15 +1,17 @@
-[gd_scene load_steps=9 format=3 uid="uid://c2kdqjrspepyw"]
+[gd_scene load_steps=10 format=3 uid="uid://c2kdqjrspepyw"]
 
+[ext_resource type="Script" path="res://tropis_level4.gd" id="1_afpfg"]
 [ext_resource type="Texture2D" uid="uid://qype1e0ikgv4" path="res://sprites/Narasi tropis 1/view-spectacular-nature-landscape 1.png" id="1_fxfxl"]
 [ext_resource type="Texture2D" uid="uid://b7030qk2a01uq" path="res://sprites/Nomor 4 tropis/Group 80.png" id="2_uaahg"]
 [ext_resource type="Texture2D" uid="uid://dllnrm00yer0y" path="res://sprites/Nomor 4 tropis/Group 9.png" id="3_tjspl"]
 [ext_resource type="Texture2D" uid="uid://ovcg3o0h2yqu" path="res://sprites/Nomor 4 tropis/Group 184.png" id="4_omgko"]
-[ext_resource type="Texture2D" uid="uid://bxj28oilsdq41" path="res://sprites/Nomor 4 tropis/Aves.png" id="5_xhlfc"]
-[ext_resource type="Texture2D" uid="uid://cmkeu30804hrg" path="res://sprites/Nomor 4 tropis/Group 185.png" id="6_o2pet"]
+[ext_resource type="Texture2D" uid="uid://cypuqierkhxgo" path="res://sprites/Nomor 5 tropis/phasianidae.png" id="6_t23i6"]
+[ext_resource type="Texture2D" uid="uid://cvyn1d8n84dfw" path="res://sprites/Nomor 5 tropis/phasianidae!.png" id="7_27hrw"]
 [ext_resource type="Texture2D" uid="uid://g46le4gmp8w6" path="res://sprites/Nomor 4 tropis/Group 8.png" id="8_egcpv"]
 [ext_resource type="Texture2D" uid="uid://caufnowom60xq" path="res://sprites/Nomor 4 tropis/Group 186.png" id="8_v55ay"]
 
 [node name="Node" type="Node"]
+script = ExtResource("1_afpfg")
 
 [node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]
 position = Vector2(661, 306)
@@ -34,9 +36,9 @@ offset_left = 387.0
 offset_top = 472.0
 offset_right = 860.0
 offset_bottom = 632.0
-texture_normal = ExtResource("5_xhlfc")
-texture_pressed = ExtResource("6_o2pet")
-texture_hover = ExtResource("6_o2pet")
+texture_normal = ExtResource("6_t23i6")
+texture_pressed = ExtResource("7_27hrw")
+texture_hover = ExtResource("7_27hrw")
 
 [node name="choiceCbutton" type="TextureButton" parent="."]
 offset_left = 854.0

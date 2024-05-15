@@ -12,6 +12,8 @@ var level8passed = false
 var level9passed = false
 var level10passed = false
 
+var isOnSavanna = false
+var isOnTropical = false
 var isSavannaPassed = false
 var isTropicalPassed = false
 var isTropicalLvlPassed1 = false
