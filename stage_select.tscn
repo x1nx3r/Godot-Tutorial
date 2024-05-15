@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://v2vgmnpnf468"]
+[gd_scene load_steps=10 format=3 uid="uid://v2vgmnpnf468"]
 
+[ext_resource type="Script" path="res://stage_select.gd" id="1_k4quc"]
 [ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="1_w5qr1"]
 [ext_resource type="Texture2D" uid="uid://omyvww5o1ve1" path="res://sprites/stage_select/dialog.png" id="2_6hg36"]
 [ext_resource type="Texture2D" uid="uid://bwvgsflusyk7x" path="res://sprites/levelSelect/exit.png" id="3_qcwl6"]
@@ -9,7 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://b81vkou7g58lq" path="res://sprites/stage_select/savanna-bw.png" id="7_du6vy"]
 [ext_resource type="Texture2D" uid="uid://wrvcb3hcp7jb" path="res://sprites/welcome_page/masukButton.png" id="8_7a7m4"]
 
-[node name="Node" type="Node"]
+[node name="active_scene" type="Node"]
+script = ExtResource("1_k4quc")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1280.0

@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://dlawo4dpx62xj"]
+
+[ext_resource type="Texture2D" uid="uid://lpfvsergyxtu" path="res://sprites/Narasi safana1/wanderlust-summer-landscape-painting-background 3.png" id="1_erlwd"]
+[ext_resource type="Texture2D" uid="uid://d3uyw7jgvn3js" path="res://sprites/Narasi safana1/09136564291372d97831a95b1c3eccbc-removebg-preview 1.png" id="2_ish4k"]
+[ext_resource type="Texture2D" uid="uid://bm878esc4n6v2" path="res://sprites/Narasi Safana 3/Mask group.png" id="3_k8hh8"]
+[ext_resource type="Texture2D" uid="uid://i6elts8yx3ju" path="res://sprites/buttonArrowKekanan.png" id="4_fdeve"]
+[ext_resource type="Texture2D" uid="uid://c8j48ou1pql7b" path="res://sprites/Narasi Safana 3/image-removebg-preview (4) 1.png" id="5_q8yh4"]
+
+[node name="Node" type="Node"]
+
+[node name="Wanderlust-summer-landscape-painting-background3" type="Sprite2D" parent="."]
+position = Vector2(666, 278)
+scale = Vector2(1.2037, 1.36929)
+texture = ExtResource("1_erlwd")
+
+[node name="09136564291372d97831a95b1c3Eccbc-removebg-preview1" type="Sprite2D" parent="."]
+position = Vector2(206, 298)
+texture = ExtResource("2_ish4k")
+
+[node name="MaskGroup" type="Sprite2D" parent="."]
+position = Vector2(637.125, 568.25)
+scale = Vector2(0.851686, 0.86399)
+texture = ExtResource("3_k8hh8")
+
+[node name="nextButton" type="TextureButton" parent="."]
+offset_left = 1174.0
+offset_top = 481.0
+offset_right = 1257.0
+offset_bottom = 571.0
+texture_normal = ExtResource("4_fdeve")
+
+[node name="Image-removebg-preview(4)1" type="Sprite2D" parent="."]
+position = Vector2(811, 287)
+scale = Vector2(0.638528, 0.644444)
+texture = ExtResource("5_q8yh4")

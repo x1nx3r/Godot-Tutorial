@@ -1,0 +1,66 @@
+[gd_scene load_steps=10 format=3 uid="uid://b5gqm3nkfhfrv"]
+
+[ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="1_polt5"]
+[ext_resource type="Texture2D" uid="uid://d04ixsdw518ho" path="res://sprites/levelSelect/dialog.png" id="2_7kc7g"]
+[ext_resource type="Texture2D" uid="uid://bwvgsflusyk7x" path="res://sprites/levelSelect/exit.png" id="3_nev6t"]
+[ext_resource type="Texture2D" uid="uid://dbj0pnfs55l6l" path="res://sprites/Menu level angka/Group 9.png" id="4_bv814"]
+[ext_resource type="Texture2D" uid="uid://bm4lathgwl65t" path="res://sprites/Menu level angka/Group 171.png" id="5_8xq38"]
+[ext_resource type="Texture2D" uid="uid://csep1gco2wqvx" path="res://sprites/Menu level angka/Group 172.png" id="6_cd3s2"]
+[ext_resource type="Texture2D" uid="uid://rawwcneojyie" path="res://sprites/Menu level angka/Group 173.png" id="7_wtuge"]
+[ext_resource type="Texture2D" uid="uid://xvoy3stx1mlx" path="res://sprites/Menu level angka/Group 174.png" id="8_m474l"]
+[ext_resource type="Texture2D" uid="uid://c0xxfnns6crqb" path="res://sprites/levelSelect/key.png" id="14_sghoy"]
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("1_polt5")
+
+[node name="Dialog" type="Sprite2D" parent="."]
+position = Vector2(632, 348)
+scale = Vector2(1, 1.04811)
+texture = ExtResource("2_7kc7g")
+
+[node name="buttonHome" type="TextureButton" parent="."]
+offset_left = 1128.0
+offset_top = 580.0
+offset_right = 1211.0
+offset_bottom = 670.0
+texture_normal = ExtResource("3_nev6t")
+
+[node name="Group9" type="Sprite2D" parent="."]
+position = Vector2(491, 284)
+texture = ExtResource("4_bv814")
+
+[node name="Group171" type="Sprite2D" parent="."]
+position = Vector2(639, 288)
+texture = ExtResource("5_8xq38")
+
+[node name="Group172" type="Sprite2D" parent="."]
+position = Vector2(794, 292)
+texture = ExtResource("6_cd3s2")
+
+[node name="Group173" type="Sprite2D" parent="."]
+position = Vector2(563, 429)
+texture = ExtResource("7_wtuge")
+
+[node name="Group174" type="Sprite2D" parent="."]
+position = Vector2(721, 438)
+texture = ExtResource("8_m474l")
+
+[node name="Key2" type="Sprite2D" parent="."]
+position = Vector2(679, 319)
+texture = ExtResource("14_sghoy")
+
+[node name="Key3" type="Sprite2D" parent="."]
+position = Vector2(835, 321)
+texture = ExtResource("14_sghoy")
+
+[node name="Key4" type="Sprite2D" parent="."]
+position = Vector2(599, 462)
+texture = ExtResource("14_sghoy")
+
+[node name="Key5" type="Sprite2D" parent="."]
+position = Vector2(762, 468)
+texture = ExtResource("14_sghoy")

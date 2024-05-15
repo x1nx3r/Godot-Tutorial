@@ -1,3 +1,49 @@
-[gd_scene format=3 uid="uid://b4uot8vt0udrg"]
+[gd_scene load_steps=10 format=3 uid="uid://b4uot8vt0udrg"]
+
+[ext_resource type="Texture2D" uid="uid://qype1e0ikgv4" path="res://sprites/Narasi tropis 1/view-spectacular-nature-landscape 1.png" id="1_rbfe3"]
+[ext_resource type="Texture2D" uid="uid://bb2n4bgbujiy8" path="res://sprites/soal/level9.png" id="2_r88sx"]
+[ext_resource type="Texture2D" uid="uid://bh5kj2jp4i5xm" path="res://sprites/lvl9/choiceA.png" id="3_bln4n"]
+[ext_resource type="Texture2D" uid="uid://cw6dmqtac6omu" path="res://sprites/lvl9/choiceA_.png" id="4_lxr3q"]
+[ext_resource type="Texture2D" uid="uid://dsc64luip7dck" path="res://sprites/lvl9/choiceB.png" id="5_fnyus"]
+[ext_resource type="Texture2D" uid="uid://cwksi456af5gq" path="res://sprites/lvl6/pilihanB_.png" id="6_xx1n0"]
+[ext_resource type="Texture2D" uid="uid://hoyri21yvu3v" path="res://sprites/lvl9/choiceB_.png" id="7_is1hm"]
+[ext_resource type="Texture2D" uid="uid://3xkeht5crmtl" path="res://sprites/lvl9/choiceC.png" id="8_j3b35"]
+[ext_resource type="Texture2D" uid="uid://bgbevuj3lnhu4" path="res://sprites/lvl9/choiceC_.png" id="9_squuo"]
 
 [node name="Node" type="Node"]
+
+[node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]
+position = Vector2(661, 306)
+texture = ExtResource("1_rbfe3")
+
+[node name="Level2" type="Sprite2D" parent="."]
+position = Vector2(632.75, 254.25)
+scale = Vector2(0.881395, 0.860341)
+texture = ExtResource("2_r88sx")
+
+[node name="choiceAbutton" type="TextureButton" parent="."]
+offset_left = 119.0
+offset_top = 466.0
+offset_right = 421.0
+offset_bottom = 566.0
+texture_normal = ExtResource("3_bln4n")
+texture_pressed = ExtResource("4_lxr3q")
+texture_hover = ExtResource("4_lxr3q")
+
+[node name="choiceBbutton" type="TextureButton" parent="."]
+offset_left = 488.0
+offset_top = 472.0
+offset_right = 784.0
+offset_bottom = 572.0
+texture_normal = ExtResource("5_fnyus")
+texture_pressed = ExtResource("6_xx1n0")
+texture_hover = ExtResource("7_is1hm")
+
+[node name="choiceCbutton" type="TextureButton" parent="."]
+offset_left = 854.0
+offset_top = 472.0
+offset_right = 1065.0
+offset_bottom = 572.0
+texture_normal = ExtResource("8_j3b35")
+texture_pressed = ExtResource("9_squuo")
+texture_hover = ExtResource("9_squuo")

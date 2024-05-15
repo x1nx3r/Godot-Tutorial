@@ -63,7 +63,6 @@ offset_top = 208.0
 offset_right = 870.0
 offset_bottom = 319.0
 texture_normal = ExtResource("9_6q624")
-metadata/_edit_use_anchors_ = true
 
 [node name="level5Button" type="TextureButton" parent="."]
 offset_left = 407.0

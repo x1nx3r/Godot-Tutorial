@@ -2,7 +2,7 @@ extends Node
 var current_scene = null
 
 func _ready():
-	goto_scene("res://titleScene.tscn")
+	#goto_scene("res://titleScene.tscn")
 	var root = get_tree().root
 	current_scene = root.get_child(root.get_child_count() - 1)
 	# Get the main viewport
@@ -74,33 +74,35 @@ func nextStageButton_pressed():
 		0:
 			goto_scene("stage_select.tscn")
 		1:
-			goto_scene("petunjuk_sabana.tscn")
+			goto_scene("sabana_select.tscn")
 		2:
-			goto_scene("sabana_level1.tscn")
+			goto_scene("petunjuk_sabana.tscn")
 		3:
-			goto_scene("sabana_level2.tscn")
+			goto_scene("sabana_level1.tscn")
 		4:
-			goto_scene("sabana_level3.tscn")
+			goto_scene("sabana_level2.tscn")
 		5:
-			goto_scene("sabana_level4.tscn")
+			goto_scene("sabana_level3.tscn")
 		6:
-			goto_scene("sabana_level5.tscn")
+			goto_scene("sabana_level4.tscn")
 		7:
-			goto_scene("petunjuk_tropis.tscn")
+			goto_scene("sabana_level5.tscn")
 		8:
-			goto_scene("tropis_level1.tscn")
+			goto_scene("petunjuk_tropis.tscn")
 		9:
-			goto_scene("tropis_level2.tscn")
+			goto_scene("tropis_select.tscn")
 		10:
-			goto_scene("tropis_level3.tscn")
+			goto_scene("tropis_level1.tscn")
 		11:
-			goto_scene("tropis_level4.tscn")
+			goto_scene("tropis_level2.tscn")
 		12:
-			goto_scene("tropis_level5.tscn")
+			goto_scene("tropis_level3.tscn")
 		13:
-			goto_scene("res://savescore.tscn")
+			goto_scene("tropis_level4.tscn")
 		14:
-			goto_scene("res://savescore.tscn")
+			goto_scene("tropis_level5.tscn")
+		15:
+			goto_scene("savescore.tscn")
 
 func progressionCheck(thing):
 	thing.visible=false
