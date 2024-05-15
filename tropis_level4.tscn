@@ -1,50 +1,48 @@
-[gd_scene load_steps=10 format=3 uid="uid://c2kdqjrspepyw"]
+[gd_scene load_steps=9 format=3 uid="uid://c2kdqjrspepyw"]
 
-[ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="1_s33lj"]
-[ext_resource type="Texture2D" uid="uid://bb2n4bgbujiy8" path="res://sprites/soal/level9.png" id="2_n4s8l"]
-[ext_resource type="Texture2D" uid="uid://bh5kj2jp4i5xm" path="res://sprites/lvl9/choiceA.png" id="3_rll6f"]
-[ext_resource type="Texture2D" uid="uid://cw6dmqtac6omu" path="res://sprites/lvl9/choiceA_.png" id="4_emxyb"]
-[ext_resource type="Texture2D" uid="uid://dsc64luip7dck" path="res://sprites/lvl9/choiceB.png" id="5_x57ub"]
-[ext_resource type="Texture2D" uid="uid://cwksi456af5gq" path="res://sprites/lvl6/pilihanB_.png" id="6_o0dgs"]
-[ext_resource type="Texture2D" uid="uid://hoyri21yvu3v" path="res://sprites/lvl9/choiceB_.png" id="7_xgq0b"]
-[ext_resource type="Texture2D" uid="uid://3xkeht5crmtl" path="res://sprites/lvl9/choiceC.png" id="8_pln5h"]
-[ext_resource type="Texture2D" uid="uid://bgbevuj3lnhu4" path="res://sprites/lvl9/choiceC_.png" id="9_a1ny8"]
+[ext_resource type="Texture2D" uid="uid://qype1e0ikgv4" path="res://sprites/Narasi tropis 1/view-spectacular-nature-landscape 1.png" id="1_fxfxl"]
+[ext_resource type="Texture2D" uid="uid://b7030qk2a01uq" path="res://sprites/Nomor 4 tropis/Group 80.png" id="2_uaahg"]
+[ext_resource type="Texture2D" uid="uid://dllnrm00yer0y" path="res://sprites/Nomor 4 tropis/Group 9.png" id="3_tjspl"]
+[ext_resource type="Texture2D" uid="uid://ovcg3o0h2yqu" path="res://sprites/Nomor 4 tropis/Group 184.png" id="4_omgko"]
+[ext_resource type="Texture2D" uid="uid://bxj28oilsdq41" path="res://sprites/Nomor 4 tropis/Aves.png" id="5_xhlfc"]
+[ext_resource type="Texture2D" uid="uid://cmkeu30804hrg" path="res://sprites/Nomor 4 tropis/Group 185.png" id="6_o2pet"]
+[ext_resource type="Texture2D" uid="uid://g46le4gmp8w6" path="res://sprites/Nomor 4 tropis/Group 8.png" id="8_egcpv"]
+[ext_resource type="Texture2D" uid="uid://caufnowom60xq" path="res://sprites/Nomor 4 tropis/Group 186.png" id="8_v55ay"]
 
 [node name="Node" type="Node"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1280.0
-offset_bottom = 720.0
-texture = ExtResource("1_s33lj")
+[node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]
+position = Vector2(661, 306)
+texture = ExtResource("1_fxfxl")
 
 [node name="Level2" type="Sprite2D" parent="."]
 position = Vector2(632.75, 254.25)
 scale = Vector2(0.881395, 0.860341)
-texture = ExtResource("2_n4s8l")
+texture = ExtResource("2_uaahg")
 
 [node name="choiceAbutton" type="TextureButton" parent="."]
-offset_left = 119.0
+offset_left = 7.0
 offset_top = 466.0
-offset_right = 421.0
-offset_bottom = 566.0
-texture_normal = ExtResource("3_rll6f")
-texture_pressed = ExtResource("4_emxyb")
-texture_hover = ExtResource("4_emxyb")
+offset_right = 542.0
+offset_bottom = 639.0
+texture_normal = ExtResource("3_tjspl")
+texture_pressed = ExtResource("4_omgko")
+texture_hover = ExtResource("4_omgko")
 
 [node name="choiceBbutton" type="TextureButton" parent="."]
-offset_left = 488.0
+offset_left = 387.0
 offset_top = 472.0
-offset_right = 784.0
-offset_bottom = 572.0
-texture_normal = ExtResource("5_x57ub")
-texture_pressed = ExtResource("6_o0dgs")
-texture_hover = ExtResource("7_xgq0b")
+offset_right = 860.0
+offset_bottom = 632.0
+texture_normal = ExtResource("5_xhlfc")
+texture_pressed = ExtResource("6_o2pet")
+texture_hover = ExtResource("6_o2pet")
 
 [node name="choiceCbutton" type="TextureButton" parent="."]
 offset_left = 854.0
 offset_top = 472.0
 offset_right = 1065.0
 offset_bottom = 572.0
-texture_normal = ExtResource("8_pln5h")
-texture_pressed = ExtResource("9_a1ny8")
-texture_hover = ExtResource("9_a1ny8")
+texture_normal = ExtResource("8_egcpv")
+texture_pressed = ExtResource("8_v55ay")
+texture_hover = ExtResource("8_v55ay")

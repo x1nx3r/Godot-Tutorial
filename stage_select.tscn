@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://v2vgmnpnf468"]
+[gd_scene load_steps=9 format=3 uid="uid://v2vgmnpnf468"]
 
 [ext_resource type="Script" path="res://stage_select.gd" id="1_k4quc"]
 [ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="1_w5qr1"]
@@ -8,7 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://bcuv1ds8an1of" path="res://sprites/stage_select/forest-bw.png" id="5_e41kq"]
 [ext_resource type="Texture2D" uid="uid://bs3fhhq8o5w37" path="res://sprites/stage_select/savanna.png" id="6_w5soo"]
 [ext_resource type="Texture2D" uid="uid://b81vkou7g58lq" path="res://sprites/stage_select/savanna-bw.png" id="7_du6vy"]
-[ext_resource type="Texture2D" uid="uid://wrvcb3hcp7jb" path="res://sprites/welcome_page/masukButton.png" id="8_7a7m4"]
 
 [node name="active_scene" type="Node"]
 script = ExtResource("1_k4quc")
@@ -23,39 +22,27 @@ position = Vector2(646, 302)
 scale = Vector2(0.878042, 0.907728)
 texture = ExtResource("2_6hg36")
 
-[node name="buttonHome" type="TextureButton" parent="."]
-offset_left = 1128.0
-offset_top = 580.0
-offset_right = 1211.0
-offset_bottom = 670.0
-texture_normal = ExtResource("3_qcwl6")
-
-[node name="TextureButton" type="TextureButton" parent="."]
+[node name="tropisButton" type="TextureButton" parent="."]
 offset_left = 655.0
 offset_top = 222.0
 offset_right = 897.0
 offset_bottom = 384.0
 texture_normal = ExtResource("4_77nbq")
 texture_pressed = ExtResource("5_e41kq")
+texture_hover = ExtResource("5_e41kq")
 
-[node name="TextureButton2" type="TextureButton" parent="."]
+[node name="savannaButton" type="TextureButton" parent="."]
 offset_left = 393.0
 offset_top = 223.0
 offset_right = 635.0
 offset_bottom = 385.0
 texture_normal = ExtResource("6_w5soo")
 texture_pressed = ExtResource("7_du6vy")
+texture_hover = ExtResource("7_du6vy")
 
-[node name="buttonHome2" type="TextureButton" parent="."]
+[node name="buttonHome" type="TextureButton" parent="."]
 offset_left = 1128.0
 offset_top = 580.0
 offset_right = 1211.0
 offset_bottom = 670.0
 texture_normal = ExtResource("3_qcwl6")
-
-[node name="playButton" type="TextureButton" parent="."]
-offset_left = 465.0
-offset_top = 551.0
-offset_right = 825.0
-offset_bottom = 722.0
-texture_normal = ExtResource("8_7a7m4")

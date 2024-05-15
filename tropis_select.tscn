@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://b5gqm3nkfhfrv"]
+[gd_scene load_steps=11 format=3 uid="uid://b5gqm3nkfhfrv"]
 
-[ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="1_polt5"]
+[ext_resource type="Script" path="res://tropis_select.gd" id="1_0sk24"]
+[ext_resource type="Texture2D" uid="uid://qype1e0ikgv4" path="res://sprites/Narasi tropis 1/view-spectacular-nature-landscape 1.png" id="1_84ltn"]
 [ext_resource type="Texture2D" uid="uid://d04ixsdw518ho" path="res://sprites/levelSelect/dialog.png" id="2_7kc7g"]
 [ext_resource type="Texture2D" uid="uid://bwvgsflusyk7x" path="res://sprites/levelSelect/exit.png" id="3_nev6t"]
 [ext_resource type="Texture2D" uid="uid://dbj0pnfs55l6l" path="res://sprites/Menu level angka/Group 9.png" id="4_bv814"]
@@ -11,11 +12,11 @@
 [ext_resource type="Texture2D" uid="uid://c0xxfnns6crqb" path="res://sprites/levelSelect/key.png" id="14_sghoy"]
 
 [node name="Node" type="Node"]
+script = ExtResource("1_0sk24")
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1280.0
-offset_bottom = 720.0
-texture = ExtResource("1_polt5")
+[node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]
+position = Vector2(661, 306)
+texture = ExtResource("1_84ltn")
 
 [node name="Dialog" type="Sprite2D" parent="."]
 position = Vector2(632, 348)
@@ -29,23 +30,23 @@ offset_right = 1211.0
 offset_bottom = 670.0
 texture_normal = ExtResource("3_nev6t")
 
-[node name="Group9" type="Sprite2D" parent="."]
+[node name="level1Button" type="Sprite2D" parent="."]
 position = Vector2(491, 284)
 texture = ExtResource("4_bv814")
 
-[node name="Group171" type="Sprite2D" parent="."]
+[node name="level2Button" type="Sprite2D" parent="."]
 position = Vector2(639, 288)
 texture = ExtResource("5_8xq38")
 
-[node name="Group172" type="Sprite2D" parent="."]
+[node name="level3Button" type="Sprite2D" parent="."]
 position = Vector2(794, 292)
 texture = ExtResource("6_cd3s2")
 
-[node name="Group173" type="Sprite2D" parent="."]
+[node name="level4Button" type="Sprite2D" parent="."]
 position = Vector2(563, 429)
 texture = ExtResource("7_wtuge")
 
-[node name="Group174" type="Sprite2D" parent="."]
+[node name="level5Button" type="Sprite2D" parent="."]
 position = Vector2(721, 438)
 texture = ExtResource("8_m474l")
 

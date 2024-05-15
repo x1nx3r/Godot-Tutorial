@@ -1,50 +1,54 @@
 [gd_scene load_steps=10 format=3 uid="uid://e2hi68ivrv0i"]
 
-[ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="1_cwaj6"]
-[ext_resource type="Texture2D" uid="uid://bb2n4bgbujiy8" path="res://sprites/soal/level9.png" id="2_xruj2"]
-[ext_resource type="Texture2D" uid="uid://bh5kj2jp4i5xm" path="res://sprites/lvl9/choiceA.png" id="3_2jqtf"]
-[ext_resource type="Texture2D" uid="uid://cw6dmqtac6omu" path="res://sprites/lvl9/choiceA_.png" id="4_dqqgo"]
-[ext_resource type="Texture2D" uid="uid://dsc64luip7dck" path="res://sprites/lvl9/choiceB.png" id="5_f81v0"]
-[ext_resource type="Texture2D" uid="uid://cwksi456af5gq" path="res://sprites/lvl6/pilihanB_.png" id="6_ewad1"]
-[ext_resource type="Texture2D" uid="uid://hoyri21yvu3v" path="res://sprites/lvl9/choiceB_.png" id="7_ib2w4"]
-[ext_resource type="Texture2D" uid="uid://3xkeht5crmtl" path="res://sprites/lvl9/choiceC.png" id="8_joq7x"]
-[ext_resource type="Texture2D" uid="uid://bgbevuj3lnhu4" path="res://sprites/lvl9/choiceC_.png" id="9_okj27"]
+[ext_resource type="Texture2D" uid="uid://qype1e0ikgv4" path="res://sprites/Narasi tropis 1/view-spectacular-nature-landscape 1.png" id="1_qpsy1"]
+[ext_resource type="Texture2D" uid="uid://dhi48feegjt27" path="res://sprites/Nomor 3 tropis/Group 25.png" id="2_8tnui"]
+[ext_resource type="Texture2D" uid="uid://b4u6551rbcg4x" path="res://sprites/Nomor 3 tropis/Group 9.png" id="3_be426"]
+[ext_resource type="Texture2D" uid="uid://ld5emg76h85e" path="res://sprites/Nomor 3 tropis/Group 181.png" id="4_hlavk"]
+[ext_resource type="Texture2D" uid="uid://dct6at1puwi6b" path="res://sprites/Nomor 3 tropis/Aves.png" id="5_nyubf"]
+[ext_resource type="Texture2D" uid="uid://kodw1b6nwglw" path="res://sprites/Nomor 3 tropis/Group 182.png" id="6_qo67r"]
+[ext_resource type="Texture2D" uid="uid://cc6ehuov1hmli" path="res://sprites/Nomor 3 tropis/Group 8.png" id="7_apemx"]
+[ext_resource type="Texture2D" uid="uid://bau47tb6sh2iq" path="res://sprites/Nomor 3 tropis/Group 183.png" id="8_ayhoa"]
+[ext_resource type="Texture2D" uid="uid://bjrgvaquoj0xa" path="res://sprites/Nomor 3 tropis/WhatsApp Image 2024-05-15 at 19.50 1.png" id="9_4gg00"]
 
 [node name="Node" type="Node"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1280.0
-offset_bottom = 720.0
-texture = ExtResource("1_cwaj6")
+[node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]
+position = Vector2(661, 306)
+texture = ExtResource("1_qpsy1")
 
 [node name="Level2" type="Sprite2D" parent="."]
 position = Vector2(632.75, 254.25)
 scale = Vector2(0.881395, 0.860341)
-texture = ExtResource("2_xruj2")
+texture = ExtResource("2_8tnui")
 
 [node name="choiceAbutton" type="TextureButton" parent="."]
-offset_left = 119.0
+offset_left = 90.0
 offset_top = 466.0
-offset_right = 421.0
-offset_bottom = 566.0
-texture_normal = ExtResource("3_2jqtf")
-texture_pressed = ExtResource("4_dqqgo")
-texture_hover = ExtResource("4_dqqgo")
+offset_right = 427.0
+offset_bottom = 626.0
+texture_normal = ExtResource("3_be426")
+texture_pressed = ExtResource("4_hlavk")
+texture_hover = ExtResource("4_hlavk")
 
 [node name="choiceBbutton" type="TextureButton" parent="."]
-offset_left = 488.0
+offset_left = 409.0
 offset_top = 472.0
-offset_right = 784.0
-offset_bottom = 572.0
-texture_normal = ExtResource("5_f81v0")
-texture_pressed = ExtResource("6_ewad1")
-texture_hover = ExtResource("7_ib2w4")
+offset_right = 787.0
+offset_bottom = 632.0
+texture_normal = ExtResource("5_nyubf")
+texture_pressed = ExtResource("6_qo67r")
+texture_hover = ExtResource("6_qo67r")
 
 [node name="choiceCbutton" type="TextureButton" parent="."]
-offset_left = 854.0
+offset_left = 770.0
 offset_top = 472.0
-offset_right = 1065.0
-offset_bottom = 572.0
-texture_normal = ExtResource("8_joq7x")
-texture_pressed = ExtResource("9_okj27")
-texture_hover = ExtResource("9_okj27")
+offset_right = 1255.0
+offset_bottom = 632.0
+texture_normal = ExtResource("7_apemx")
+texture_pressed = ExtResource("8_ayhoa")
+texture_hover = ExtResource("8_ayhoa")
+
+[node name="WhatsAppImage2024-05-15At19_501" type="Sprite2D" parent="."]
+position = Vector2(648, 225)
+scale = Vector2(0.909091, 0.917722)
+texture = ExtResource("9_4gg00")

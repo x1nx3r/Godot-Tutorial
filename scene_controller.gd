@@ -2,7 +2,7 @@ extends Node
 var current_scene = null
 
 func _ready():
-	#goto_scene("res://titleScene.tscn")
+	goto_scene("res://titleScene.tscn")
 	var root = get_tree().root
 	current_scene = root.get_child(root.get_child_count() - 1)
 	# Get the main viewport
@@ -42,18 +42,23 @@ func _deferred_goto_scene(path):
 	# Optionally, to make it compatible with the SceneTree.change_scene_to_file() API.
 	get_tree().current_scene = current_scene
 
-
 func enter_button_pressed():
 	goto_scene("userinput.tscn")
 
 func play_button_pressed():
-	goto_scene("main_scene.tscn")
+	goto_scene("stage_select.tscn")
 
 func credit_button_pressed():
 	goto_scene("res://credit_page.tscn")
 
 func levelMenu_button_pressed():
 	goto_scene("main_scene.tscn")
+
+func savana_button_pressed():
+	goto_scene("sabana_select.tscn")
+
+func tropis_button_pressed():
+	goto_scene("tropis_select.tscn")
 
 func level1Button_pressed():
 	goto_scene("level_1.tscn")
@@ -68,7 +73,6 @@ func correct_answer_pressed():
 	globals.currentStage += 1
 	goto_scene("jawaban_benar.tscn")
 
-
 func nextStageButton_pressed():
 	match globals.currentStage:
 		0:
@@ -78,38 +82,78 @@ func nextStageButton_pressed():
 		2:
 			goto_scene("petunjuk_sabana.tscn")
 		3:
-			goto_scene("sabana_level1.tscn")
+			goto_scene("petunjuk_sabana2.tscn")
 		4:
-			goto_scene("sabana_level2.tscn")
+			goto_scene("petunjuk_sabana3.tscn")
 		5:
-			goto_scene("sabana_level3.tscn")
+			goto_scene("petunjuk_sabana4.tscn")
 		6:
-			goto_scene("sabana_level4.tscn")
+			goto_scene("sabana_level1.tscn")
 		7:
-			goto_scene("sabana_level5.tscn")
+			goto_scene("sabana_level2.tscn")
 		8:
-			goto_scene("petunjuk_tropis.tscn")
+			goto_scene("sabana_level3.tscn")
 		9:
-			goto_scene("tropis_select.tscn")
+			goto_scene("sabana_level4.tscn")
 		10:
-			goto_scene("tropis_level1.tscn")
+			goto_scene("sabana_level5.tscn")
 		11:
-			goto_scene("tropis_level2.tscn")
+			goto_scene("sabana_select.tscn")
 		12:
-			goto_scene("tropis_level3.tscn")
+			goto_scene("petunjuk_tropis.tscn")
 		13:
-			goto_scene("tropis_level4.tscn")
+			goto_scene("petunjuk_tropis2.tscn")
 		14:
-			goto_scene("tropis_level5.tscn")
+			goto_scene("petunjuk_tropis3.tscn")
 		15:
+			goto_scene("petunjuk_tropis4.tscn")
+		16:
+			goto_scene("tropis_level1.tscn")
+		17:
+			goto_scene("tropis_level2.tscn")
+		18:
+			goto_scene("tropis_level3.tscn")
+		19:
+			goto_scene("tropis_level4.tscn")
+		20:
+			goto_scene("tropis_level5.tscn")
+		21:
 			goto_scene("savescore.tscn")
 
 func progressionCheck(thing):
 	thing.visible=false
 
-func level2_button_pressed():
+func level2Savanna_button_pressed():
 	if globals.level2passed == true :
-		goto_scene("res://level_2.tscn")
+		goto_scene("res://sabana_level2.tscn")
+
+func level3Savanna_button_pressed():
+	if globals.level3passed == true:
+		goto_scene("res://sabana_level3.tscn")
+
+func level4Savanna_button_pressed():
+	if globals.level4passed == true:
+		goto_scene("res://sabana_level4.tscn")
+
+func level5Savanna_button_pressed():
+	if globals.level5passed == true:
+		goto_scene("res://sabana_level5.tscn")
+
+func level2Tropical_button_pressed():
+	if globals.level2passed == true :
+		goto_scene("res://tropis_level2.tscn")
+
+func level3Tropical_button_pressed():
+	if globals.level3passed == true:
+		goto_scene("res://tropis_level3.tscn")
+
+func level4Tropical_button_pressed():
+	if globals.level4passed == true:
+		goto_scene("res://tropis_level4.tscn")
+
+func level5Tropical_button_pressed():
+	if globals.level5passed == true:
+		goto_scene("res://tropis_level5.tscn")
 
 func level3_button_pressed():
 	if globals.level3passed == true :
