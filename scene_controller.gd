@@ -68,36 +68,37 @@ func correct_answer_pressed():
 	globals.currentStage += 1
 	goto_scene("jawaban_benar.tscn")
 
+
 func nextStageButton_pressed():
 	match globals.currentStage:
 		0:
-			goto_scene("res://petunjuk1_1.tscn")
+			goto_scene("stage_select.tscn")
 		1:
-			goto_scene("res://petunjuk1_2.tscn")
+			goto_scene("petunjuk_sabana.tscn")
 		2:
-			goto_scene("level_1.tscn")
+			goto_scene("sabana_level1.tscn")
 		3:
-			goto_scene("level_2.tscn")
+			goto_scene("sabana_level2.tscn")
 		4:
-			goto_scene("level_3.tscn")
+			goto_scene("sabana_level3.tscn")
 		5:
-			goto_scene("res://petunjuk2.tscn")
+			goto_scene("sabana_level4.tscn")
 		6:
-			goto_scene("level_4.tscn")
+			goto_scene("sabana_level5.tscn")
 		7:
-			goto_scene("level_5.tscn")
+			goto_scene("petunjuk_tropis.tscn")
 		8:
-			goto_scene("level_6.tscn")
+			goto_scene("tropis_level1.tscn")
 		9:
-			goto_scene("petunjuk3.tscn")
+			goto_scene("tropis_level2.tscn")
 		10:
-			goto_scene("level_7.tscn")
+			goto_scene("tropis_level3.tscn")
 		11:
-			goto_scene("level_8.tscn")
+			goto_scene("tropis_level4.tscn")
 		12:
-			goto_scene("level_9.tscn")
+			goto_scene("tropis_level5.tscn")
 		13:
-			goto_scene("level_10.tscn")
+			goto_scene("res://savescore.tscn")
 		14:
 			goto_scene("res://savescore.tscn")
 
