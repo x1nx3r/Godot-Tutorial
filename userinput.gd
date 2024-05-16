@@ -2,16 +2,20 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	globals.currentStage = 0
 	$playButton.pressed.connect(SceneController.play_button_pressed)
-	globals.level2passed = false
-	globals.level3passed = false
-	globals.level4passed = false
-	globals.level5passed = false
-	globals.level6passed = false
-	globals.level7passed = false
-	globals.level8passed = false
-	globals.level9passed = false
-	globals.level10passed = false
+	globals.isSavannaPassed = false
+	globals.isTropicalPassed = false
+	globals.isTropicalLvlPassed1 = false
+	globals.isTropicalLvlPassed2 = false
+	globals.isTropicalLvlPassed3 = false
+	globals.isTropicalLvlPassed4 = false
+	globals.isTropicalLvlPassed5 = false
+	globals.isSavannaLvlPassed1 = false
+	globals.isSavannaLvlPassed2 = false
+	globals.isSavannaLvlPassed3 = false
+	globals.isSavannaLvlPassed4 = false
+	globals.isSavannaLvlPassed5 = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -22,5 +26,3 @@ func _on_text_update(): # Update the userInput variable whenever the text in the
 	var userInput : String = uNameInput.text
 	globals.uName = userInput
 	print("User input: ", userInput)
-
-

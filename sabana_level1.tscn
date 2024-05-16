@@ -1,0 +1,51 @@
+[gd_scene load_steps=10 format=3 uid="uid://coj8jkn25bxen"]
+
+[ext_resource type="Texture2D" uid="uid://lpfvsergyxtu" path="res://sprites/Narasi safana1/wanderlust-summer-landscape-painting-background 3.png" id="1_aggel"]
+[ext_resource type="Script" path="res://sabana_level1.gd" id="1_yeoqx"]
+[ext_resource type="Texture2D" uid="uid://bjcw4rymqgtc4" path="res://sprites/Nomor 1 Sabana/Group 17.png" id="2_0im54"]
+[ext_resource type="Texture2D" uid="uid://b6eroe1p1eoxo" path="res://sprites/Nomor 1 Sabana/a.png" id="3_d7fks"]
+[ext_resource type="Texture2D" uid="uid://c5pqtqenymuw7" path="res://sprites/Nomor 1 Sabana/a!.png" id="4_4tqc2"]
+[ext_resource type="Texture2D" uid="uid://cut0wy3k77te4" path="res://sprites/Nomor 1 Sabana/b.png" id="5_qqfs1"]
+[ext_resource type="Texture2D" uid="uid://bqkpohi8vcs2b" path="res://sprites/Nomor 1 Sabana/b!.png" id="6_x8ihs"]
+[ext_resource type="Texture2D" uid="uid://dr7bpkdxjmfds" path="res://sprites/Nomor 1 Sabana/c.png" id="7_03vtr"]
+[ext_resource type="Texture2D" uid="uid://bux4ljck3wln8" path="res://sprites/Nomor 1 Sabana/c!.png" id="8_otrnc"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_yeoqx")
+
+[node name="Wanderlust-summer-landscape-painting-background3" type="Sprite2D" parent="."]
+position = Vector2(666, 278)
+scale = Vector2(1.2037, 1.36929)
+texture = ExtResource("1_aggel")
+
+[node name="Level2" type="Sprite2D" parent="."]
+position = Vector2(632.75, 254.25)
+scale = Vector2(0.881395, 0.860341)
+texture = ExtResource("2_0im54")
+
+[node name="choiceAbutton" type="TextureButton" parent="."]
+offset_left = 119.0
+offset_top = 466.0
+offset_right = 421.0
+offset_bottom = 566.0
+texture_normal = ExtResource("3_d7fks")
+texture_pressed = ExtResource("4_4tqc2")
+texture_hover = ExtResource("4_4tqc2")
+
+[node name="choiceBbutton" type="TextureButton" parent="."]
+offset_left = 488.0
+offset_top = 472.0
+offset_right = 784.0
+offset_bottom = 572.0
+texture_normal = ExtResource("5_qqfs1")
+texture_pressed = ExtResource("6_x8ihs")
+texture_hover = ExtResource("6_x8ihs")
+
+[node name="choiceCbutton" type="TextureButton" parent="."]
+offset_left = 854.0
+offset_top = 472.0
+offset_right = 1065.0
+offset_bottom = 572.0
+texture_normal = ExtResource("7_03vtr")
+texture_pressed = ExtResource("8_otrnc")
+texture_hover = ExtResource("8_otrnc")

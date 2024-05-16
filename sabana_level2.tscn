@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=3 uid="uid://be7ik00k8mpw8"]
+
+[ext_resource type="Script" path="res://sabana_level2.gd" id="1_6akao"]
+[ext_resource type="Texture2D" uid="uid://lpfvsergyxtu" path="res://sprites/Narasi safana1/wanderlust-summer-landscape-painting-background 3.png" id="1_36lg4"]
+[ext_resource type="Texture2D" uid="uid://dq0nojo5oxo1a" path="res://sprites/Nomor 2 sabana/Group 16.png" id="2_q5d28"]
+[ext_resource type="Texture2D" uid="uid://byhjjud3u3gcf" path="res://sprites/Nomor 2 sabana/a.png" id="3_wdfs2"]
+[ext_resource type="Texture2D" uid="uid://bp1jxmb46ceph" path="res://sprites/Nomor 2 sabana/a!.png" id="4_rfrog"]
+[ext_resource type="Texture2D" uid="uid://csulq6ch84gr3" path="res://sprites/Nomor 2 sabana/b.png" id="5_xf0ux"]
+[ext_resource type="Texture2D" uid="uid://t8alws5jnvob" path="res://sprites/Nomor 2 sabana/b!.png" id="6_afpfr"]
+[ext_resource type="Texture2D" uid="uid://le6golg3k0v1" path="res://sprites/Nomor 2 sabana/c.png" id="7_d02mp"]
+[ext_resource type="Texture2D" uid="uid://cgxc2b6v5v384" path="res://sprites/Nomor 2 sabana/c!.png" id="8_f6qps"]
+[ext_resource type="Texture2D" uid="uid://c58kjdcx6o3x3" path="res://sprites/Nomor 2 sabana/WhatsApp Image 2024-05-15 at 19.51 1.png" id="9_wkgx3"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_6akao")
+
+[node name="Wanderlust-summer-landscape-painting-background3" type="Sprite2D" parent="."]
+position = Vector2(666, 278)
+scale = Vector2(1.2037, 1.36929)
+texture = ExtResource("1_36lg4")
+
+[node name="Level2" type="Sprite2D" parent="."]
+position = Vector2(632.75, 254.25)
+scale = Vector2(0.881395, 0.860341)
+texture = ExtResource("2_q5d28")
+
+[node name="choiceAbutton" type="TextureButton" parent="."]
+offset_left = 119.0
+offset_top = 466.0
+offset_right = 421.0
+offset_bottom = 566.0
+texture_normal = ExtResource("3_wdfs2")
+texture_pressed = ExtResource("4_rfrog")
+texture_hover = ExtResource("4_rfrog")
+
+[node name="choiceBbutton" type="TextureButton" parent="."]
+offset_left = 488.0
+offset_top = 472.0
+offset_right = 784.0
+offset_bottom = 572.0
+texture_normal = ExtResource("5_xf0ux")
+texture_pressed = ExtResource("6_afpfr")
+texture_hover = ExtResource("6_afpfr")
+
+[node name="choiceCbutton" type="TextureButton" parent="."]
+offset_left = 854.0
+offset_top = 472.0
+offset_right = 1065.0
+offset_bottom = 572.0
+texture_normal = ExtResource("7_d02mp")
+texture_pressed = ExtResource("8_f6qps")
+texture_hover = ExtResource("8_f6qps")
+
+[node name="WhatsAppImage2024-05-15At19_511" type="Sprite2D" parent="."]
+position = Vector2(631, 228)
+scale = Vector2(0.888, 0.915094)
+texture = ExtResource("9_wkgx3")

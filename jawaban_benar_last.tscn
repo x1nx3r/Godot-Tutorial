@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddh8rpdx0dyre"]
+
+[ext_resource type="Script" path="res://jawaban_benar_last.gd" id="1_opk2y"]
+[ext_resource type="Texture2D" uid="uid://cj61trqi8khw1" path="res://sprites/greeter_page/jawaban_benar.png" id="2_3abyr"]
+[ext_resource type="Texture2D" uid="uid://b5pxyvrc7yxhb" path="res://sprites/buttonHome.png" id="3_l4nd3"]
+[ext_resource type="Texture2D" uid="uid://i6elts8yx3ju" path="res://sprites/buttonArrowKekanan.png" id="4_yfgi8"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_opk2y")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_3abyr")
+
+[node name="levelMenuButton" type="TextureButton" parent="."]
+offset_left = 1127.0
+offset_top = 583.0
+offset_right = 1210.0
+offset_bottom = 673.0
+texture_normal = ExtResource("3_l4nd3")
+
+[node name="nextButton" type="TextureButton" parent="."]
+offset_left = 606.0
+offset_top = 425.0
+offset_right = 689.0
+offset_bottom = 515.0
+texture_normal = ExtResource("4_yfgi8")

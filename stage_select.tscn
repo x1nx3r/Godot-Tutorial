@@ -1,0 +1,63 @@
+[gd_scene load_steps=12 format=3 uid="uid://v2vgmnpnf468"]
+
+[ext_resource type="Script" path="res://stage_select.gd" id="1_k4quc"]
+[ext_resource type="Texture2D" uid="uid://cfw1loq3vbj78" path="res://sprites/welcome_page/bg.png" id="1_w5qr1"]
+[ext_resource type="Texture2D" uid="uid://bwvgsflusyk7x" path="res://sprites/levelSelect/exit.png" id="3_qcwl6"]
+[ext_resource type="Texture2D" uid="uid://dfksy2a3sutcg" path="res://sprites/stage_select/Group 193.png" id="3_yaa4b"]
+[ext_resource type="Texture2D" uid="uid://c4pst5lyxnsi7" path="res://sprites/stage_select/forest.png" id="4_77nbq"]
+[ext_resource type="Texture2D" uid="uid://bcuv1ds8an1of" path="res://sprites/stage_select/forest-bw.png" id="5_e41kq"]
+[ext_resource type="Texture2D" uid="uid://bs3fhhq8o5w37" path="res://sprites/stage_select/savanna.png" id="6_w5soo"]
+[ext_resource type="Texture2D" uid="uid://b81vkou7g58lq" path="res://sprites/stage_select/savanna-bw.png" id="7_du6vy"]
+[ext_resource type="Texture2D" uid="uid://b754btt4ydtj7" path="res://sprites/stage_select/Hutan Tropis Tantangan Lebih Sulit.png" id="9_ujpbs"]
+[ext_resource type="Texture2D" uid="uid://8g1i5m4yqkhh" path="res://sprites/stage_select/Padang Savana Tantangan Lebih Mudah.png" id="10_7tyf1"]
+[ext_resource type="Texture2D" uid="uid://cq483gdaobp2v" path="res://sprites/stage_select/Anda bisa memilih untuk mengerjakan satu atau keduanya.png" id="11_hp424"]
+
+[node name="active_scene" type="Node"]
+script = ExtResource("1_k4quc")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("1_w5qr1")
+
+[node name="Dialog" type="Sprite2D" parent="."]
+position = Vector2(646, 302)
+scale = Vector2(0.878042, 0.907728)
+texture = ExtResource("3_yaa4b")
+
+[node name="tropisButton" type="TextureButton" parent="."]
+offset_left = 655.0
+offset_top = 222.0
+offset_right = 897.0
+offset_bottom = 384.0
+texture_normal = ExtResource("4_77nbq")
+texture_pressed = ExtResource("5_e41kq")
+texture_hover = ExtResource("5_e41kq")
+
+[node name="savannaButton" type="TextureButton" parent="."]
+offset_left = 393.0
+offset_top = 223.0
+offset_right = 635.0
+offset_bottom = 385.0
+texture_normal = ExtResource("6_w5soo")
+texture_pressed = ExtResource("7_du6vy")
+texture_hover = ExtResource("7_du6vy")
+
+[node name="buttonHome" type="TextureButton" parent="."]
+offset_left = 1128.0
+offset_top = 580.0
+offset_right = 1211.0
+offset_bottom = 670.0
+texture_normal = ExtResource("3_qcwl6")
+
+[node name="HutanTropisTantanganLebihSulit" type="Sprite2D" parent="."]
+position = Vector2(780, 417)
+texture = ExtResource("9_ujpbs")
+
+[node name="PadangSavanaTantanganLebihMudah" type="Sprite2D" parent="."]
+position = Vector2(510, 417)
+texture = ExtResource("10_7tyf1")
+
+[node name="AndaBisaMemilihUntukMengerjakanSatuAtauKeduanya" type="Sprite2D" parent="."]
+position = Vector2(648, 202)
+texture = ExtResource("11_hp424")

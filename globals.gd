@@ -12,5 +12,20 @@ var level8passed = false
 var level9passed = false
 var level10passed = false
 
+var isOnSavanna = false
+var isOnTropical = false
+var isSavannaPassed = false
+var isTropicalPassed = false
+var isTropicalLvlPassed1 = false
+var isTropicalLvlPassed2 = false
+var isTropicalLvlPassed3 = false
+var isTropicalLvlPassed4 = false
+var isTropicalLvlPassed5 = false
+var isSavannaLvlPassed1 = false
+var isSavannaLvlPassed2 = false
+var isSavannaLvlPassed3 = false
+var isSavannaLvlPassed4 = false
+var isSavannaLvlPassed5 = false
+
 var uScore = 1
 var uName = "gagal"

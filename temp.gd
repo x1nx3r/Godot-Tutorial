@@ -83,3 +83,36 @@ func _deferred_goto_scene(path):
 
 	# Optionally, to make it compatible with the SceneTree.change_scene_to_file() API.
 	get_tree().current_scene = current_scene
+	
+	func nextStageButton_pressed():
+	match globals.currentStage:
+		0:
+			goto_scene("res://petunjuk1_1.tscn")
+		1:
+			goto_scene("res://petunjuk1_2.tscn")
+		2:
+			goto_scene("level_1.tscn")
+		3:
+			goto_scene("level_2.tscn")
+		4:
+			goto_scene("level_3.tscn")
+		5:
+			goto_scene("res://petunjuk2.tscn")
+		6:
+			goto_scene("level_4.tscn")
+		7:
+			goto_scene("level_5.tscn")
+		8:
+			goto_scene("level_6.tscn")
+		9:
+			goto_scene("petunjuk3.tscn")
+		10:
+			goto_scene("level_7.tscn")
+		11:
+			goto_scene("level_8.tscn")
+		12:
+			goto_scene("level_9.tscn")
+		13:
+			goto_scene("level_10.tscn")
+		14:
+			goto_scene("res://savescore.tscn")

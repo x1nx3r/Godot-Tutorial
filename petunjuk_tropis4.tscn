@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://dxgjlj522l2a2"]
+
+[ext_resource type="Script" path="res://petunjuk_tropis4.gd" id="1_krfw7"]
+[ext_resource type="Texture2D" uid="uid://qype1e0ikgv4" path="res://sprites/Narasi tropis 1/view-spectacular-nature-landscape 1.png" id="1_y4s1u"]
+[ext_resource type="Texture2D" uid="uid://d3uyw7jgvn3js" path="res://sprites/Narasi safana1/09136564291372d97831a95b1c3eccbc-removebg-preview 1.png" id="2_n2lx0"]
+[ext_resource type="Texture2D" uid="uid://i6elts8yx3ju" path="res://sprites/buttonArrowKekanan.png" id="4_dglnu"]
+[ext_resource type="Texture2D" uid="uid://bfdupdk2tmdie" path="res://sprites/tropis4.png" id="4_ufyuu"]
+[ext_resource type="Texture2D" uid="uid://dfa28gkpnc51p" path="res://sprites/Narasi tropis 4/Ai generated chicken picture.png" id="5_4og2y"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_krfw7")
+
+[node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]
+position = Vector2(661, 306)
+texture = ExtResource("1_y4s1u")
+
+[node name="09136564291372d97831a95b1c3Eccbc-removebg-preview1" type="Sprite2D" parent="."]
+position = Vector2(206, 298)
+texture = ExtResource("2_n2lx0")
+
+[node name="MaskGroup" type="Sprite2D" parent="."]
+position = Vector2(637.125, 568.25)
+scale = Vector2(0.851686, 0.86399)
+texture = ExtResource("4_ufyuu")
+
+[node name="nextButton" type="TextureButton" parent="."]
+offset_left = 1174.0
+offset_top = 481.0
+offset_right = 1257.0
+offset_bottom = 571.0
+texture_normal = ExtResource("4_dglnu")
+
+[node name="AiGeneratedChickenPicture" type="Sprite2D" parent="."]
+position = Vector2(1095, 269)
+texture = ExtResource("5_4og2y")

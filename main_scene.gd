@@ -4,7 +4,7 @@ extends Node
 func _ready():
 	globals.currentStage=0
 	$buttonHome.pressed.connect(SceneController.homeButton_pressed)
-	$level2Button.pressed.connect(SceneController.level2_button_pressed)
+	$level2Button.pressed.connect(SceneController.level2_button_pressed)c
 	$level1Button.pressed.connect(SceneController.nextStageButton_pressed)
 	$level3Button.pressed.connect(SceneController.level3_button_pressed)
 	$level4Button.pressed.connect(SceneController.level4_button_pressed)
