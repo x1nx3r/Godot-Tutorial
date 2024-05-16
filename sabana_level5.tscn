@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://sabana_level5.gd" id="1_cpneg"]
 [ext_resource type="Texture2D" uid="uid://lpfvsergyxtu" path="res://sprites/Narasi safana1/wanderlust-summer-landscape-painting-background 3.png" id="1_gsbnu"]
 [ext_resource type="Texture2D" uid="uid://c71fuoq3qrl4k" path="res://sprites/Nomor 5 sabana/Group 16.png" id="2_3yoqo"]
-[ext_resource type="Texture2D" uid="uid://tbwnrddsvdq8" path="res://sprites/Nomor 5 sabana/Aves.png" id="3_b1e8k"]
-[ext_resource type="Texture2D" uid="uid://732gxkfp0454" path="res://sprites/Nomor 5 sabana/Group 170.png" id="4_7ai66"]
+[ext_resource type="Texture2D" uid="uid://desuvn5746q3s" path="res://sprites/canidaeA.png" id="4_nle6t"]
+[ext_resource type="Texture2D" uid="uid://b43okkjly2fkr" path="res://sprites/canidaeA!.png" id="5_aoypx"]
 [ext_resource type="Texture2D" uid="uid://blso84n0mhdjg" path="res://sprites/Nomor 5 sabana/Group 17.png" id="5_dypq2"]
 [ext_resource type="Texture2D" uid="uid://dxr25g13bilib" path="res://sprites/Nomor 5 sabana/Group 169.png" id="6_oui8m"]
 [ext_resource type="Texture2D" uid="uid://bxq74hvd5nrw4" path="res://sprites/Nomor 5 sabana/Group 8.png" id="7_pxaco"]
@@ -29,9 +29,9 @@ offset_left = 66.0
 offset_top = 466.0
 offset_right = 477.0
 offset_bottom = 626.0
-texture_normal = ExtResource("3_b1e8k")
-texture_pressed = ExtResource("4_7ai66")
-texture_hover = ExtResource("4_7ai66")
+texture_normal = ExtResource("4_nle6t")
+texture_pressed = ExtResource("5_aoypx")
+texture_hover = ExtResource("5_aoypx")
 
 [node name="choiceBbutton" type="TextureButton" parent="."]
 offset_left = 491.0

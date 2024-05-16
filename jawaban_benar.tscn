@@ -30,6 +30,7 @@ offset_left = 1127.0
 offset_top = 583.0
 offset_right = 1210.0
 offset_bottom = 673.0
+pivot_offset = Vector2(38, 46)
 texture_normal = ExtResource("4_do5x0")
 
 [node name="nextButton" type="TextureButton" parent="."]

@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://dj8enopt3ox6b" path="res://sprites/Nomor 3 sabana/Group 18.png" id="2_21566"]
 [ext_resource type="Texture2D" uid="uid://dv73bnsft2ojh" path="res://sprites/Nomor 3 sabana/Aves.png" id="3_5wfie"]
 [ext_resource type="Texture2D" uid="uid://de51kos1amfnk" path="res://sprites/Nomor 3 sabana/Aves-2.png" id="4_qo1pt"]
-[ext_resource type="Texture2D" uid="uid://baqfhr5a2mh6n" path="res://sprites/Nomor 3 sabana/Aves-1.png" id="5_2i7rt"]
-[ext_resource type="Texture2D" uid="uid://d4ec56722etjp" path="res://sprites/Nomor 3 sabana/Aves-3.png" id="6_kmejq"]
+[ext_resource type="Texture2D" uid="uid://4xf1tqewvjyw" path="res://sprites/artiodactylaB.png" id="6_nvx5q"]
+[ext_resource type="Texture2D" uid="uid://dbdyjy7tsnv26" path="res://sprites/artiodactylaB!.png" id="7_lhx1r"]
 [ext_resource type="Texture2D" uid="uid://dl247b3s2miyd" path="res://sprites/Nomor 3 sabana/Group 8.png" id="7_q3l8c"]
 [ext_resource type="Texture2D" uid="uid://cwndgl4mce7gl" path="res://sprites/Nomor 3 sabana/Group 163.png" id="8_xt7ls"]
 
@@ -37,9 +37,9 @@ offset_left = 438.0
 offset_top = 470.0
 offset_right = 816.0
 offset_bottom = 630.0
-texture_normal = ExtResource("5_2i7rt")
-texture_pressed = ExtResource("6_kmejq")
-texture_hover = ExtResource("6_kmejq")
+texture_normal = ExtResource("6_nvx5q")
+texture_pressed = ExtResource("7_lhx1r")
+texture_hover = ExtResource("7_lhx1r")
 
 [node name="choiceCbutton" type="TextureButton" parent="."]
 offset_left = 804.0

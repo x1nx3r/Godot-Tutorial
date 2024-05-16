@@ -52,7 +52,12 @@ func credit_button_pressed():
 	goto_scene("res://credit_page.tscn")
 
 func levelMenu_button_pressed():
-	goto_scene("stage_select.tscn")
+	if globals.isOnSavanna:
+		goto_scene("sabana_select.tscn")
+	elif globals.isOnTropical:
+		goto_scene("tropis_select.tscn")
+	else :
+		goto_scene("stage_selec.tscn")
 
 func savanna_button_pressed():
 	goto_scene("sabana_select.tscn")
@@ -130,35 +135,35 @@ func progressionCheck(thing):
 	thing.visible=false
 
 func level2Savanna_button_pressed():
-	if globals.level2passed == true :
+	if globals.isSavannaLvlPassed2 == true :
 		goto_scene("res://sabana_level2.tscn")
 
 func level3Savanna_button_pressed():
-	if globals.level3passed == true:
+	if globals.isSavannaLvlPassed3 == true:
 		goto_scene("res://sabana_level3.tscn")
 
 func level4Savanna_button_pressed():
-	if globals.level4passed == true:
+	if globals.isSavannaLvlPassed4 == true:
 		goto_scene("res://sabana_level4.tscn")
 
 func level5Savanna_button_pressed():
-	if globals.level5passed == true:
+	if globals.isSavannaLvlPassed5 == true:
 		goto_scene("res://sabana_level5.tscn")
 
 func level2Tropical_button_pressed():
-	if globals.level2passed == true :
+	if globals.isTropicalLvlPassed2 == true :
 		goto_scene("res://tropis_level2.tscn")
 
 func level3Tropical_button_pressed():
-	if globals.level3passed == true:
+	if globals.isTropicalLvlPassed3 == true:
 		goto_scene("res://tropis_level3.tscn")
 
 func level4Tropical_button_pressed():
-	if globals.level4passed == true:
+	if globals.isTropicalLvlPassed4 == true:
 		goto_scene("res://tropis_level4.tscn")
 
 func level5Tropical_button_pressed():
-	if globals.level5passed == true:
+	if globals.isTropicalLvlPassed5 == true:
 		goto_scene("res://tropis_level5.tscn")
 
 func level3_button_pressed():
