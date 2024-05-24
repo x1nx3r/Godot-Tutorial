@@ -12,6 +12,8 @@ func _process(delta):
 
 func _on_jalurMudah_presssed():
 	SceneController.goto_scene("sabana_level2.tscn")
+	globals.isSavanaEasyChosen = true
 
 func _on_jalurSulit_presssed():
 	SceneController.goto_scene("sabana_level4.tscn")
+	globals.isSavanaHardChosen = true
