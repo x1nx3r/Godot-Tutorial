@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://sabana_select.gd" id="1_832cy"]
 [ext_resource type="Texture2D" uid="uid://lpfvsergyxtu" path="res://sprites/Narasi safana1/wanderlust-summer-landscape-painting-background 3.png" id="1_eue2j"]
-[ext_resource type="Texture2D" uid="uid://d04ixsdw518ho" path="res://sprites/levelSelect/dialog.png" id="2_j63pv"]
 [ext_resource type="Texture2D" uid="uid://bwvgsflusyk7x" path="res://sprites/levelSelect/exit.png" id="3_28l7g"]
+[ext_resource type="Texture2D" uid="uid://dqj7hprfqcs7l" path="res://sprites/PETA.png" id="3_xvt7b"]
 [ext_resource type="Texture2D" uid="uid://dbj0pnfs55l6l" path="res://sprites/Menu level angka/Group 9.png" id="4_prnpf"]
 [ext_resource type="Texture2D" uid="uid://bm4lathgwl65t" path="res://sprites/Menu level angka/Group 171.png" id="5_nlc7n"]
 [ext_resource type="Texture2D" uid="uid://csep1gco2wqvx" path="res://sprites/Menu level angka/Group 172.png" id="6_min08"]
@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://xvoy3stx1mlx" path="res://sprites/Menu level angka/Group 174.png" id="8_s7e7e"]
 [ext_resource type="Texture2D" uid="uid://c0xxfnns6crqb" path="res://sprites/levelSelect/key.png" id="14_wwwd8"]
 
-[node name="Node" type="Node"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_832cy")
 
 [node name="Wanderlust-summer-landscape-painting-background3" type="Sprite2D" parent="."]
@@ -19,65 +19,65 @@ position = Vector2(666, 278)
 scale = Vector2(1.2037, 1.36929)
 texture = ExtResource("1_eue2j")
 
-[node name="Dialog" type="Sprite2D" parent="."]
-position = Vector2(632, 348)
-scale = Vector2(1, 1.04811)
-texture = ExtResource("2_j63pv")
+[node name="Peta" type="Sprite2D" parent="."]
+position = Vector2(657, 352)
+scale = Vector2(0.566627, 0.50321)
+texture = ExtResource("3_xvt7b")
 
 [node name="buttonHome" type="TextureButton" parent="."]
-offset_left = 1128.0
-offset_top = 580.0
-offset_right = 1211.0
-offset_bottom = 670.0
+offset_left = 1151.0
+offset_top = 582.0
+offset_right = 1261.0
+offset_bottom = 693.0
 texture_normal = ExtResource("3_28l7g")
 
 [node name="level1Button" type="TextureButton" parent="."]
-offset_left = 406.0
-offset_top = 220.0
-offset_right = 557.0
-offset_bottom = 372.0
+offset_left = 452.0
+offset_top = 468.0
+offset_right = 603.0
+offset_bottom = 620.0
 texture_normal = ExtResource("4_prnpf")
 
 [node name="level2Button" type="TextureButton" parent="."]
-offset_left = 563.0
-offset_top = 227.0
-offset_right = 714.0
-offset_bottom = 374.0
+offset_left = 382.0
+offset_top = 205.0
+offset_right = 533.0
+offset_bottom = 352.0
 texture_normal = ExtResource("5_nlc7n")
 
 [node name="level3Button" type="TextureButton" parent="."]
-offset_left = 731.0
-offset_top = 232.0
-offset_right = 882.0
-offset_bottom = 379.0
+offset_left = 570.0
+offset_top = 94.0
+offset_right = 721.0
+offset_bottom = 241.0
 texture_normal = ExtResource("6_min08")
 
 [node name="level4Button" type="TextureButton" parent="."]
-offset_left = 479.0
-offset_top = 370.0
-offset_right = 630.0
-offset_bottom = 517.0
+offset_left = 966.0
+offset_top = 348.0
+offset_right = 1117.0
+offset_bottom = 495.0
 texture_normal = ExtResource("7_7xewo")
 
 [node name="level5Button" type="TextureButton" parent="."]
-offset_left = 652.0
-offset_top = 378.0
-offset_right = 803.0
-offset_bottom = 525.0
+offset_left = 866.0
+offset_top = -6.0
+offset_right = 1017.0
+offset_bottom = 141.0
 texture_normal = ExtResource("8_s7e7e")
 
 [node name="Key2" type="Sprite2D" parent="."]
-position = Vector2(689, 323)
+position = Vector2(497, 305)
 texture = ExtResource("14_wwwd8")
 
 [node name="Key3" type="Sprite2D" parent="."]
-position = Vector2(846, 327)
+position = Vector2(679, 199)
 texture = ExtResource("14_wwwd8")
 
 [node name="Key4" type="Sprite2D" parent="."]
-position = Vector2(594, 478)
+position = Vector2(1070, 456)
 texture = ExtResource("14_wwwd8")
 
 [node name="Key5" type="Sprite2D" parent="."]
-position = Vector2(765, 476)
+position = Vector2(976, 97)
 texture = ExtResource("14_wwwd8")

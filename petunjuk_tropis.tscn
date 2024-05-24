@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://i6elts8yx3ju" path="res://sprites/buttonArrowKekanan.png" id="4_gi1qo"]
 [ext_resource type="Texture2D" uid="uid://6nrud5636xg4" path="res://sprites/tropis1.png" id="4_ofwsn"]
 
-[node name="Node" type="Node"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_06sed")
 
 [node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]

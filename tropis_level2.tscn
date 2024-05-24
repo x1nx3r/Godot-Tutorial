@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://qxkvrdq3dbjj" path="res://sprites/Nomor 2 tropis/Group 8.png" id="7_ynp0i"]
 [ext_resource type="Texture2D" uid="uid://hg6ttudi1x4m" path="res://sprites/Nomor 2 tropis/Group 180.png" id="8_h3jxr"]
 
-[node name="Node" type="Node"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_4qu3q")
 
 [node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]

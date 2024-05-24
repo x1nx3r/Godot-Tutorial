@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cgxc2b6v5v384" path="res://sprites/Nomor 2 sabana/c!.png" id="8_f6qps"]
 [ext_resource type="Texture2D" uid="uid://c58kjdcx6o3x3" path="res://sprites/Nomor 2 sabana/WhatsApp Image 2024-05-15 at 19.51 1.png" id="9_wkgx3"]
 
-[node name="Node" type="Node"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_6akao")
 
 [node name="Wanderlust-summer-landscape-painting-background3" type="Sprite2D" parent="."]

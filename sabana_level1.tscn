@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dr7bpkdxjmfds" path="res://sprites/Nomor 1 Sabana/c.png" id="7_03vtr"]
 [ext_resource type="Texture2D" uid="uid://bux4ljck3wln8" path="res://sprites/Nomor 1 Sabana/c!.png" id="8_otrnc"]
 
-[node name="Node" type="Node"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_yeoqx")
 
 [node name="Wanderlust-summer-landscape-painting-background3" type="Sprite2D" parent="."]

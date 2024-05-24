@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://djlxyijpydgex" path="res://sprites/tropis3.png" id="4_l3v44"]
 [ext_resource type="Texture2D" uid="uid://djjmn2ip330fk" path="res://sprites/squirrel-3576406122-removebg-preview 1.png" id="6_tn875"]
 
-[node name="Node" type="Node"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_vo444")
 
 [node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]

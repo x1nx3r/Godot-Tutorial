@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cs7r8mfcurc2q" path="res://sprites/tropis2.png" id="4_ebf6x"]
 [ext_resource type="Texture2D" uid="uid://dby7blqror553" path="res://sprites/Narasi tropis 2/images-removebg-preview 1.png" id="5_q2oi5"]
 
-[node name="Node" type="Node"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_pccal")
 
 [node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]

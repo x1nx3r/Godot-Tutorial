@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bfdupdk2tmdie" path="res://sprites/tropis4.png" id="4_ufyuu"]
 [ext_resource type="Texture2D" uid="uid://dfa28gkpnc51p" path="res://sprites/Narasi tropis 4/Ai generated chicken picture.png" id="5_4og2y"]
 
-[node name="Node" type="Node"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_krfw7")
 
 [node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]

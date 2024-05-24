@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://ckhgpd1qtghpi" path="res://sprites/Nomor 5 tropis/Group 189.png" id="8_5qpoc"]
 [ext_resource type="Texture2D" uid="uid://233ak6o0jyd1" path="res://sprites/Nomor 5 tropis/WhatsApp Image 2024-05-15 at 19.50 2.png" id="9_ugyrt"]
 
-[node name="Node" type="Node"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_wgxi7")
 
 [node name="View-spectacular-nature-landscape1" type="Sprite2D" parent="."]

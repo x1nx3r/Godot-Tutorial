@@ -57,7 +57,7 @@ func levelMenu_button_pressed():
 	elif globals.isOnTropical:
 		goto_scene("tropis_select.tscn")
 	else :
-		goto_scene("stage_selec.tscn")
+		goto_scene("stage_select.tscn")
 
 func savanna_button_pressed():
 	goto_scene("sabana_select.tscn")
