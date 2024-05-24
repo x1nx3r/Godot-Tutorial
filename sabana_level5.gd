@@ -5,7 +5,7 @@ extends Node
 func _ready():
 	globals.isOnSavanna=false
 	globals.isSavannaLvlPassed5=true
-	globals.currentStage = 10
+	globals.currentStage = 11
 	$choiceAbutton.pressed.connect(SceneController.false_answer_pressed)
 	$choiceBbutton.pressed.connect(SceneController.false_answer_pressed)
 	$choiceCbutton.pressed.connect(SceneController.correct_last_answer_pressed)

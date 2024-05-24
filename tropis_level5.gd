@@ -5,7 +5,7 @@ extends Node
 func _ready():
 	globals.isOnTropical=false
 	globals.isTropicalLvlPassed5=true
-	globals.currentStage = 20
+	globals.currentStage = 22
 	$choiceAbutton.pressed.connect(SceneController.correct_last_answer_pressed)
 	$choiceBbutton.pressed.connect(SceneController.false_answer_pressed)
 	$choiceCbutton.pressed.connect(SceneController.false_answer_pressed)

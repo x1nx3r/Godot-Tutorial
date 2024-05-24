@@ -39,17 +39,17 @@ offset_bottom = 620.0
 texture_normal = ExtResource("4_prnpf")
 
 [node name="level2Button" type="TextureButton" parent="."]
-offset_left = 382.0
-offset_top = 205.0
-offset_right = 533.0
-offset_bottom = 352.0
+offset_left = 377.0
+offset_top = 278.0
+offset_right = 528.0
+offset_bottom = 425.0
 texture_normal = ExtResource("5_nlc7n")
 
 [node name="level3Button" type="TextureButton" parent="."]
-offset_left = 570.0
-offset_top = 94.0
-offset_right = 721.0
-offset_bottom = 241.0
+offset_left = 568.0
+offset_top = 138.0
+offset_right = 719.0
+offset_bottom = 285.0
 texture_normal = ExtResource("6_min08")
 
 [node name="level4Button" type="TextureButton" parent="."]
@@ -60,18 +60,18 @@ offset_bottom = 495.0
 texture_normal = ExtResource("7_7xewo")
 
 [node name="level5Button" type="TextureButton" parent="."]
-offset_left = 866.0
-offset_top = -6.0
-offset_right = 1017.0
-offset_bottom = 141.0
+offset_left = 828.0
+offset_top = 96.0
+offset_right = 979.0
+offset_bottom = 243.0
 texture_normal = ExtResource("8_s7e7e")
 
 [node name="Key2" type="Sprite2D" parent="."]
-position = Vector2(497, 305)
+position = Vector2(491, 384)
 texture = ExtResource("14_wwwd8")
 
 [node name="Key3" type="Sprite2D" parent="."]
-position = Vector2(679, 199)
+position = Vector2(681, 242)
 texture = ExtResource("14_wwwd8")
 
 [node name="Key4" type="Sprite2D" parent="."]
@@ -79,5 +79,5 @@ position = Vector2(1070, 456)
 texture = ExtResource("14_wwwd8")
 
 [node name="Key5" type="Sprite2D" parent="."]
-position = Vector2(976, 97)
+position = Vector2(942, 201)
 texture = ExtResource("14_wwwd8")

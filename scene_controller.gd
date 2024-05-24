@@ -99,36 +99,38 @@ func nextStageButton_pressed():
 		6:
 			goto_scene("sabana_level1.tscn")
 		7:
-			goto_scene("sabana_level2.tscn")
+			goto_scene("cabang-sabana.tscn")
 		8:
-			goto_scene("sabana_level3.tscn")
+			goto_scene("sabana_level2.tscn")
 		9:
-			goto_scene("sabana_level4.tscn")
+			goto_scene("sabana_level3.tscn")
 		10:
-			goto_scene("sabana_level5.tscn")
+			goto_scene("sabana_level4.tscn")
 		11:
-			goto_scene("tropis_select.tscn")
+			goto_scene("sabana_level5.tscn")
 		12:
-			goto_scene("petunjuk_tropis.tscn")
+			goto_scene("tropis_select.tscn")
 		13:
-			goto_scene("petunjuk_tropis2.tscn")
+			goto_scene("petunjuk_tropis.tscn")
 		14:
-			goto_scene("petunjuk_tropis3.tscn")
+			goto_scene("petunjuk_tropis2.tscn")
 		15:
-			goto_scene("petunjuk_tropis4.tscn")
+			goto_scene("petunjuk_tropis3.tscn")
 		16:
-			goto_scene("tropis_level1.tscn")
+			goto_scene("petunjuk_tropis4.tscn")
 		17:
-			goto_scene("tropis_level2.tscn")
+			goto_scene("tropis_level1.tscn")
 		18:
-			goto_scene("tropis_level3.tscn")
+			goto_scene("cabang-tropis.tscn")
 		19:
-			goto_scene("tropis_level4.tscn")
+			goto_scene("tropis_level2.tscn")
 		20:
-			goto_scene("tropis_level5.tscn")
+			goto_scene("tropis_level3.tscn")
 		21:
-			goto_scene("savescore.tscn")
+			goto_scene("tropis_level4.tscn")
 		22:
+			goto_scene("tropis_level5.tscn")
+		23:
 			goto_scene("savescore.tscn")
 
 func progressionCheck(thing):
