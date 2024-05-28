@@ -4,6 +4,7 @@ extends Node
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	globals.isSavannaLvlPassed1=true
+	globals.isOnLevel3 = false
 	globals.currentStage = 6
 	$choiceAbutton.pressed.connect(SceneController.false_answer_pressed)
 	$choiceBbutton.pressed.connect(SceneController.false_answer_pressed)

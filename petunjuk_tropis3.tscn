@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://d3uyw7jgvn3js" path="res://sprites/Narasi safana1/09136564291372d97831a95b1c3eccbc-removebg-preview 1.png" id="2_nyg7j"]
 [ext_resource type="Texture2D" uid="uid://i6elts8yx3ju" path="res://sprites/buttonArrowKekanan.png" id="4_57420"]
 [ext_resource type="Texture2D" uid="uid://djlxyijpydgex" path="res://sprites/tropis3.png" id="4_l3v44"]
-[ext_resource type="Texture2D" uid="uid://djjmn2ip330fk" path="res://sprites/squirrel-3576406122-removebg-preview 1.png" id="6_tn875"]
+[ext_resource type="Texture2D" uid="uid://cbg8rrk48dp5r" path="res://sprites/risu.png" id="6_dg88x"]
 
 [node name="active_scene" type="Node"]
 script = ExtResource("1_vo444")
@@ -30,6 +30,7 @@ offset_right = 1257.0
 offset_bottom = 571.0
 texture_normal = ExtResource("4_57420")
 
-[node name="Squirrel-3576406122-removebg-preview1" type="Sprite2D" parent="."]
-position = Vector2(1055, 280)
-texture = ExtResource("6_tn875")
+[node name="Image-removebg-preview(1)1" type="Sprite2D" parent="."]
+position = Vector2(951.554, 214.26)
+scale = Vector2(0.799873, 0.745115)
+texture = ExtResource("6_dg88x")

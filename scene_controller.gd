@@ -75,7 +75,10 @@ func false_answer_pressed():
 	goto_scene("jawaban_salah.tscn")
 
 func correct_answer_pressed():
-	globals.currentStage += 1
+	if (globals.isOnLevel3 == true):
+		globals.currentStage += 2
+	else :
+		globals.currentStage += 1
 	goto_scene("jawaban_benar.tscn")
 
 func correct_last_answer_pressed():

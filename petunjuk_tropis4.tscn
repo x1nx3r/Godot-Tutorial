@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://d3uyw7jgvn3js" path="res://sprites/Narasi safana1/09136564291372d97831a95b1c3eccbc-removebg-preview 1.png" id="2_n2lx0"]
 [ext_resource type="Texture2D" uid="uid://i6elts8yx3ju" path="res://sprites/buttonArrowKekanan.png" id="4_dglnu"]
 [ext_resource type="Texture2D" uid="uid://bfdupdk2tmdie" path="res://sprites/tropis4.png" id="4_ufyuu"]
-[ext_resource type="Texture2D" uid="uid://dfa28gkpnc51p" path="res://sprites/Narasi tropis 4/Ai generated chicken picture.png" id="5_4og2y"]
+[ext_resource type="Texture2D" uid="uid://cd5c5kxpo0plk" path="res://sprites/ayam.png" id="6_joqry"]
 
 [node name="active_scene" type="Node"]
 script = ExtResource("1_krfw7")
@@ -30,6 +30,7 @@ offset_right = 1257.0
 offset_bottom = 571.0
 texture_normal = ExtResource("4_dglnu")
 
-[node name="AiGeneratedChickenPicture" type="Sprite2D" parent="."]
-position = Vector2(1095, 269)
-texture = ExtResource("5_4og2y")
+[node name="Image-removebg-preview(1)1" type="Sprite2D" parent="."]
+position = Vector2(951.554, 214.26)
+scale = Vector2(0.799873, 0.745115)
+texture = ExtResource("6_joqry")
