@@ -3,7 +3,7 @@ extends Node
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	globals.isOnTropical=true
-	globals.currentStage=12
+	globals.currentStage=13
 	$buttonHome.pressed.connect(SceneController.homeButton_pressed)
 	$level1Button.pressed.connect(SceneController.nextStageButton_pressed)
 	$level2Button.pressed.connect(SceneController.level2Tropical_button_pressed)

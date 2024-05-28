@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dmygbd7lxkqxj" path="res://sprites/endScreen/dialog.png" id="5_8l4qu"]
 [ext_resource type="Script" path="res://progressionCheck.gd" id="6_s01b3"]
 
-[node name="savescore" type="Control"]
+[node name="active_scene" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

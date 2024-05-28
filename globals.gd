@@ -27,5 +27,11 @@ var isSavannaLvlPassed3 = false
 var isSavannaLvlPassed4 = false
 var isSavannaLvlPassed5 = false
 
+var isTropicalEasyChosen = false
+var isTropicalHardChosen = false
+
+var isSavanaEasyChosen = false
+var isSavanaHardChosen = false
+
 var uScore = 1
 var uName = "gagal"

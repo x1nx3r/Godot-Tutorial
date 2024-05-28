@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://ckditgb10nru7" path="res://sprites/savanna3.png" id="4_rq16b"]
 [ext_resource type="Texture2D" uid="uid://c8j48ou1pql7b" path="res://sprites/Narasi Safana 3/image-removebg-preview (4) 1.png" id="5_q8yh4"]
 
-[node name="Node" type="Node"]
+[node name="active_scene" type="Node"]
 script = ExtResource("1_p487b")
 
 [node name="Wanderlust-summer-landscape-painting-background3" type="Sprite2D" parent="."]
