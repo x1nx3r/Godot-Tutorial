@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://d3uyw7jgvn3js" path="res://sprites/Narasi safana1/09136564291372d97831a95b1c3eccbc-removebg-preview 1.png" id="2_ish4k"]
 [ext_resource type="Texture2D" uid="uid://i6elts8yx3ju" path="res://sprites/buttonArrowKekanan.png" id="4_fdeve"]
 [ext_resource type="Texture2D" uid="uid://ckditgb10nru7" path="res://sprites/savanna3.png" id="4_rq16b"]
-[ext_resource type="Texture2D" uid="uid://c8j48ou1pql7b" path="res://sprites/Narasi Safana 3/image-removebg-preview (4) 1.png" id="5_q8yh4"]
+[ext_resource type="Texture2D" uid="uid://bu4lemlacxmf3" path="res://sprites/rusa.png" id="6_iyy1f"]
 
 [node name="active_scene" type="Node"]
 script = ExtResource("1_p487b")
@@ -31,7 +31,7 @@ offset_right = 1257.0
 offset_bottom = 571.0
 texture_normal = ExtResource("4_fdeve")
 
-[node name="Image-removebg-preview(4)1" type="Sprite2D" parent="."]
-position = Vector2(1164, 279)
-scale = Vector2(0.737013, 0.687037)
-texture = ExtResource("5_q8yh4")
+[node name="Image-removebg-preview(1)1" type="Sprite2D" parent="."]
+position = Vector2(951.554, 214.26)
+scale = Vector2(0.799873, 0.745115)
+texture = ExtResource("6_iyy1f")
