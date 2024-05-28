@@ -35,3 +35,5 @@ var isSavanaHardChosen = false
 
 var uScore = 1
 var uName = "gagal"
+
+var isOnLevel3 = false
